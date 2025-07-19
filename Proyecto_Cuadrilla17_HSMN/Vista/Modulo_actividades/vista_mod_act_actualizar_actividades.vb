@@ -1,0 +1,3 @@
+﻿Public Class vista_mod_act_actualizar_actividades
+
+End Class

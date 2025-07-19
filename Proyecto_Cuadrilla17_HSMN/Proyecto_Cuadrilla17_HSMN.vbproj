@@ -73,6 +73,8 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Modelo\Modulo_actividades\model_actividades.vb" />
+    <Compile Include="Modelo\Modulo_asistencia\model_asistencia.vb" />
     <Compile Include="VistaPrincipal.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -95,6 +97,30 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Vista\Modulo_actividades\vista_mod_act_actualizar_actividades.Designer.vb">
+      <DependentUpon>vista_mod_act_actualizar_actividades.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Modulo_actividades\vista_mod_act_actualizar_actividades.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Modulo_actividades\vista_mod_act_listar_actividades.Designer.vb">
+      <DependentUpon>vista_mod_act_listar_actividades.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Modulo_actividades\vista_mod_act_listar_actividades.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Modulo_actividades\vista_mod_act_registrar_actividades.Designer.vb">
+      <DependentUpon>vista_mod_act_registrar_actividades.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Modulo_actividades\vista_mod_act_registrar_actividades.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Modulo_asistencia\vista_mod_asis_asistencia.Designer.vb">
+      <DependentUpon>vista_mod_asis_asistencia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Modulo_asistencia\vista_mod_asis_asistencia.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="My Project\Resources.resx">
@@ -105,6 +131,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="VistaPrincipal.resx">
       <DependentUpon>VistaPrincipal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Modulo_actividades\vista_mod_act_listar_actividades.resx">
+      <DependentUpon>vista_mod_act_listar_actividades.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Modulo_actividades\vista_mod_act_registrar_actividades.resx">
+      <DependentUpon>vista_mod_act_registrar_actividades.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Modulo_asistencia\vista_mod_asis_asistencia.resx">
+      <DependentUpon>vista_mod_asis_asistencia.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -121,8 +156,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controlador\" />
-    <Folder Include="Modelo\" />
-    <Folder Include="Vista\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
