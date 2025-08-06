@@ -31,6 +31,7 @@ Partial Class VistaPrincipal
         Me.ModuloActividadesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ActividadesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ModuloAsistenciaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AsistenciaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.StatusStrip1 = New System.Windows.Forms.StatusStrip()
         Me.ToolStripStatusLabel1 = New System.Windows.Forms.ToolStripStatusLabel()
         Me.ToolStripStatusLabel2 = New System.Windows.Forms.ToolStripStatusLabel()
@@ -80,7 +81,7 @@ Partial Class VistaPrincipal
         'DToolStripMenuItem
         '
         Me.DToolStripMenuItem.Name = "DToolStripMenuItem"
-        Me.DToolStripMenuItem.Size = New System.Drawing.Size(233, 34)
+        Me.DToolStripMenuItem.Size = New System.Drawing.Size(270, 34)
         Me.DToolStripMenuItem.Text = "Lista hermanos"
         '
         'ModuloActividadesToolStripMenuItem
@@ -93,14 +94,21 @@ Partial Class VistaPrincipal
         'ActividadesToolStripMenuItem
         '
         Me.ActividadesToolStripMenuItem.Name = "ActividadesToolStripMenuItem"
-        Me.ActividadesToolStripMenuItem.Size = New System.Drawing.Size(270, 34)
+        Me.ActividadesToolStripMenuItem.Size = New System.Drawing.Size(205, 34)
         Me.ActividadesToolStripMenuItem.Text = "Actividades"
         '
         'ModuloAsistenciaToolStripMenuItem
         '
+        Me.ModuloAsistenciaToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AsistenciaToolStripMenuItem})
         Me.ModuloAsistenciaToolStripMenuItem.Name = "ModuloAsistenciaToolStripMenuItem"
         Me.ModuloAsistenciaToolStripMenuItem.Size = New System.Drawing.Size(174, 29)
         Me.ModuloAsistenciaToolStripMenuItem.Text = "Modulo Asistencia"
+        '
+        'AsistenciaToolStripMenuItem
+        '
+        Me.AsistenciaToolStripMenuItem.Name = "AsistenciaToolStripMenuItem"
+        Me.AsistenciaToolStripMenuItem.Size = New System.Drawing.Size(192, 34)
+        Me.AsistenciaToolStripMenuItem.Text = "Asistencia"
         '
         'StatusStrip1
         '
@@ -171,4 +179,5 @@ Partial Class VistaPrincipal
     Friend WithEvents ToolStripStatusLabel2 As ToolStripStatusLabel
     Friend WithEvents ToolStripStatusLabel3 As ToolStripStatusLabel
     Friend WithEvents ToolStripStatusLabel4 As ToolStripStatusLabel
+    Friend WithEvents AsistenciaToolStripMenuItem As ToolStripMenuItem
 End Class

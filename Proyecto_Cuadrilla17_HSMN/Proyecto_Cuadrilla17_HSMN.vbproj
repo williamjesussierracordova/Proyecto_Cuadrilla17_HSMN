@@ -73,8 +73,19 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Conexion.vb" />
+    <Compile Include="Controlador\Modulo_actividades\control_actividades.vb" />
+    <Compile Include="Controlador\Modulo_asistencia\control_asistencia.vb" />
+    <Compile Include="Controlador\Modulo_hermanos\control_hermanos.vb" />
     <Compile Include="Modelo\Modulo_actividades\model_actividades.vb" />
     <Compile Include="Modelo\Modulo_asistencia\model_asistencia.vb" />
+    <Compile Include="Modelo\Modulo_hermanos\model_hermanos.vb" />
+    <Compile Include="pruebas.Designer.vb">
+      <DependentUpon>pruebas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="pruebas.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="VistaPrincipal.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -115,10 +126,40 @@
     <Compile Include="Vista\Modulo_actividades\vista_mod_act_registrar_actividades.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vista\Modulo_asistencia\vista_mod_asis_asistencia.Designer.vb">
-      <DependentUpon>vista_mod_asis_asistencia.vb</DependentUpon>
+    <Compile Include="Vista\Modulo_asistencia\vista_mod_asis_actualizar_asistencia.Designer.vb">
+      <DependentUpon>vista_mod_asis_actualizar_asistencia.vb</DependentUpon>
     </Compile>
-    <Compile Include="Vista\Modulo_asistencia\vista_mod_asis_asistencia.vb">
+    <Compile Include="Vista\Modulo_asistencia\vista_mod_asis_actualizar_asistencia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Modulo_asistencia\vista_mod_asis_listar_asistencia.Designer.vb">
+      <DependentUpon>vista_mod_asis_listar_asistencia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Modulo_asistencia\vista_mod_asis_listar_asistencia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Modulo_asistencia\vista_mod_asis_registrar_asistencia.Designer.vb">
+      <DependentUpon>vista_mod_asis_registrar_asistencia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Modulo_asistencia\vista_mod_asis_registrar_asistencia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Modulo_hermanos\vista_mod_hmo_actualizar_hermano.Designer.vb">
+      <DependentUpon>vista_mod_hmo_actualizar_hermano.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Modulo_hermanos\vista_mod_hmo_actualizar_hermano.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Modulo_hermanos\vista_mod_hmo_listar_hermano.Designer.vb">
+      <DependentUpon>vista_mod_hmo_listar_hermano.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Modulo_hermanos\vista_mod_hmo_listar_hermano.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Modulo_hermanos\vista_mod_hmo_registrar_hermano.Designer.vb">
+      <DependentUpon>vista_mod_hmo_registrar_hermano.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Modulo_hermanos\vista_mod_hmo_registrar_hermano.vb">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
@@ -129,8 +170,14 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="pruebas.resx">
+      <DependentUpon>pruebas.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="VistaPrincipal.resx">
       <DependentUpon>VistaPrincipal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Modulo_actividades\vista_mod_act_actualizar_actividades.resx">
+      <DependentUpon>vista_mod_act_actualizar_actividades.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\Modulo_actividades\vista_mod_act_listar_actividades.resx">
       <DependentUpon>vista_mod_act_listar_actividades.vb</DependentUpon>
@@ -138,8 +185,20 @@
     <EmbeddedResource Include="Vista\Modulo_actividades\vista_mod_act_registrar_actividades.resx">
       <DependentUpon>vista_mod_act_registrar_actividades.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vista\Modulo_asistencia\vista_mod_asis_asistencia.resx">
-      <DependentUpon>vista_mod_asis_asistencia.vb</DependentUpon>
+    <EmbeddedResource Include="Vista\Modulo_asistencia\vista_mod_asis_listar_asistencia.resx">
+      <DependentUpon>vista_mod_asis_listar_asistencia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Modulo_asistencia\vista_mod_asis_registrar_asistencia.resx">
+      <DependentUpon>vista_mod_asis_registrar_asistencia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Modulo_hermanos\vista_mod_hmo_actualizar_hermano.resx">
+      <DependentUpon>vista_mod_hmo_actualizar_hermano.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Modulo_hermanos\vista_mod_hmo_listar_hermano.resx">
+      <DependentUpon>vista_mod_hmo_listar_hermano.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Modulo_hermanos\vista_mod_hmo_registrar_hermano.resx">
+      <DependentUpon>vista_mod_hmo_registrar_hermano.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -154,8 +213,6 @@
     </None>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Controlador\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

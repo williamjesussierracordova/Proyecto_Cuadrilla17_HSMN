@@ -14,4 +14,12 @@
             ventana.Show()
         End If
     End Sub
+
+    Private Sub AsistenciaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AsistenciaToolStripMenuItem.Click
+        mostrarVentana(New vista_mod_asis_listar_asistencia())
+    End Sub
+
+    Private Sub DToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles DToolStripMenuItem.Click
+        mostrarVentana(New vista_mod_hmo_listar_hermano())
+    End Sub
 End Class
