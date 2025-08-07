@@ -17,13 +17,13 @@ Public Class control_asistencia
         End Using
     End Function
 
-    Public Function RegistrarAsistencia(idPersona As Integer, idEvento As Integer, fecha As DateTime) As Boolean
-        Dim query As String = "INSERT INTO Asistencias (IdPersona, IdEvento, FechaAsistencia) VALUES (@IdPersona, @IdEvento, @FechaAsistencia)"
+    Public Function RegistrarAsistencia(idPersona As Integer, idEvento As Integer, asistencia As Boolean) As Boolean
+        Dim query As String = "INSERT INTO Asistencias (Id_Persona, Id_Evento,estado_asistencia) VALUES (@IdPersona, @IdEvento, @asistencia)"
         Using connection As New SqlConnection(conexionString),
               command As New SqlCommand(query, connection)
             command.Parameters.AddWithValue("@IdPersona", idPersona)
             command.Parameters.AddWithValue("@IdEvento", idEvento)
-            command.Parameters.AddWithValue("@FechaAsistencia", fecha)
+            command.Parameters.AddWithValue("@asistencia", asistencia)
 
             connection.Open()
             Return command.ExecuteNonQuery() > 0

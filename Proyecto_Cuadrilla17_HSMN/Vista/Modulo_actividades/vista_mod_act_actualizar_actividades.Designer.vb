@@ -24,38 +24,38 @@ Partial Class vista_mod_act_actualizar_actividades
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(vista_mod_act_actualizar_actividades))
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.Label7 = New System.Windows.Forms.Label()
+        Me.txtid = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.descripcion = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.organizador = New System.Windows.Forms.TextBox()
+        Me.txtnombre = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
+        Me.dt_fecha = New System.Windows.Forms.DateTimePicker()
         Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
-        Me.ToolStripButton5 = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripSeparator4 = New System.Windows.Forms.ToolStripSeparator()
         Me.ToolStripButton3 = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
         Me.ToolStripButton4 = New System.Windows.Forms.ToolStripButton()
+        Me.ToolStripButton2 = New System.Windows.Forms.ToolStripButton()
         Me.GroupBox1.SuspendLayout()
         Me.ToolStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.Label7)
+        Me.GroupBox1.Controls.Add(Me.txtid)
         Me.GroupBox1.Controls.Add(Me.Label6)
-        Me.GroupBox1.Controls.Add(Me.TextBox3)
+        Me.GroupBox1.Controls.Add(Me.descripcion)
         Me.GroupBox1.Controls.Add(Me.Label5)
         Me.GroupBox1.Controls.Add(Me.Label4)
-        Me.GroupBox1.Controls.Add(Me.TextBox2)
-        Me.GroupBox1.Controls.Add(Me.TextBox1)
+        Me.GroupBox1.Controls.Add(Me.organizador)
+        Me.GroupBox1.Controls.Add(Me.txtnombre)
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.Label1)
-        Me.GroupBox1.Controls.Add(Me.DateTimePicker1)
+        Me.GroupBox1.Controls.Add(Me.dt_fecha)
         Me.GroupBox1.Location = New System.Drawing.Point(16, 80)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(700, 437)
@@ -63,15 +63,15 @@ Partial Class vista_mod_act_actualizar_actividades
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Actividad"
         '
-        'Label7
+        'txtid
         '
-        Me.Label7.BackColor = System.Drawing.Color.White
-        Me.Label7.Enabled = False
-        Me.Label7.Location = New System.Drawing.Point(108, 60)
-        Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(164, 34)
-        Me.Label7.TabIndex = 11
+        Me.txtid.BackColor = System.Drawing.Color.White
+        Me.txtid.Enabled = False
+        Me.txtid.Location = New System.Drawing.Point(108, 60)
+        Me.txtid.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.txtid.Name = "txtid"
+        Me.txtid.Size = New System.Drawing.Size(164, 34)
+        Me.txtid.TabIndex = 11
         '
         'Label6
         '
@@ -82,13 +82,13 @@ Partial Class vista_mod_act_actualizar_actividades
         Me.Label6.TabIndex = 10
         Me.Label6.Text = "Id:"
         '
-        'TextBox3
+        'descripcion
         '
-        Me.TextBox3.Location = New System.Drawing.Point(112, 255)
-        Me.TextBox3.Multiline = True
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(566, 115)
-        Me.TextBox3.TabIndex = 9
+        Me.descripcion.Location = New System.Drawing.Point(112, 255)
+        Me.descripcion.Multiline = True
+        Me.descripcion.Name = "descripcion"
+        Me.descripcion.Size = New System.Drawing.Size(566, 115)
+        Me.descripcion.TabIndex = 9
         '
         'Label5
         '
@@ -108,19 +108,19 @@ Partial Class vista_mod_act_actualizar_actividades
         Me.Label4.TabIndex = 7
         Me.Label4.Text = "Organiza:"
         '
-        'TextBox2
+        'organizador
         '
-        Me.TextBox2.Location = New System.Drawing.Point(111, 207)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(566, 26)
-        Me.TextBox2.TabIndex = 6
+        Me.organizador.Location = New System.Drawing.Point(111, 207)
+        Me.organizador.Name = "organizador"
+        Me.organizador.Size = New System.Drawing.Size(566, 26)
+        Me.organizador.TabIndex = 6
         '
-        'TextBox1
+        'txtnombre
         '
-        Me.TextBox1.Location = New System.Drawing.Point(111, 112)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(566, 26)
-        Me.TextBox1.TabIndex = 3
+        Me.txtnombre.Location = New System.Drawing.Point(111, 112)
+        Me.txtnombre.Name = "txtnombre"
+        Me.txtnombre.Size = New System.Drawing.Size(566, 26)
+        Me.txtnombre.TabIndex = 3
         '
         'Label2
         '
@@ -140,34 +140,23 @@ Partial Class vista_mod_act_actualizar_actividades
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "Fecha:"
         '
-        'DateTimePicker1
+        'dt_fecha
         '
-        Me.DateTimePicker1.Location = New System.Drawing.Point(111, 157)
-        Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(326, 26)
-        Me.DateTimePicker1.TabIndex = 0
+        Me.dt_fecha.Location = New System.Drawing.Point(111, 157)
+        Me.dt_fecha.Name = "dt_fecha"
+        Me.dt_fecha.Size = New System.Drawing.Size(326, 26)
+        Me.dt_fecha.TabIndex = 0
         '
         'ToolStrip1
         '
         Me.ToolStrip1.ImageScalingSize = New System.Drawing.Size(35, 35)
-        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripButton5, Me.ToolStripSeparator4, Me.ToolStripButton3, Me.ToolStripSeparator1, Me.ToolStripButton4})
+        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripButton2, Me.ToolStripSeparator4, Me.ToolStripButton3, Me.ToolStripSeparator1, Me.ToolStripButton4})
         Me.ToolStrip1.Location = New System.Drawing.Point(0, 0)
         Me.ToolStrip1.Name = "ToolStrip1"
         Me.ToolStrip1.Padding = New System.Windows.Forms.Padding(0, 5, 4, 5)
         Me.ToolStrip1.Size = New System.Drawing.Size(735, 54)
         Me.ToolStrip1.TabIndex = 2
         Me.ToolStrip1.Text = "ToolStrip1"
-        '
-        'ToolStripButton5
-        '
-        Me.ToolStripButton5.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.ToolStripButton5.Image = CType(resources.GetObject("ToolStripButton5.Image"), System.Drawing.Image)
-        Me.ToolStripButton5.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.ToolStripButton5.Margin = New System.Windows.Forms.Padding(10, 1, 10, 2)
-        Me.ToolStripButton5.Name = "ToolStripButton5"
-        Me.ToolStripButton5.Size = New System.Drawing.Size(39, 41)
-        Me.ToolStripButton5.Text = "ToolStripButton5"
-        Me.ToolStripButton5.ToolTipText = "Guardar registro"
         '
         'ToolStripSeparator4
         '
@@ -200,6 +189,16 @@ Partial Class vista_mod_act_actualizar_actividades
         Me.ToolStripButton4.Size = New System.Drawing.Size(39, 39)
         Me.ToolStripButton4.ToolTipText = "Cancelar Operación"
         '
+        'ToolStripButton2
+        '
+        Me.ToolStripButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.ToolStripButton2.Image = CType(resources.GetObject("ToolStripButton2.Image"), System.Drawing.Image)
+        Me.ToolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.ToolStripButton2.Margin = New System.Windows.Forms.Padding(10, 2, 10, 3)
+        Me.ToolStripButton2.Name = "ToolStripButton2"
+        Me.ToolStripButton2.Size = New System.Drawing.Size(39, 39)
+        Me.ToolStripButton2.ToolTipText = "Cancelar Operación"
+        '
         'vista_mod_act_actualizar_actividades
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
@@ -220,20 +219,20 @@ Partial Class vista_mod_act_actualizar_actividades
     End Sub
 
     Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents descripcion As TextBox
     Friend WithEvents Label5 As Label
     Friend WithEvents Label4 As Label
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents organizador As TextBox
+    Friend WithEvents txtnombre As TextBox
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
-    Friend WithEvents DateTimePicker1 As DateTimePicker
+    Friend WithEvents dt_fecha As DateTimePicker
     Friend WithEvents ToolStrip1 As ToolStrip
-    Friend WithEvents ToolStripButton5 As ToolStripButton
     Friend WithEvents ToolStripSeparator4 As ToolStripSeparator
     Friend WithEvents ToolStripButton4 As ToolStripButton
-    Friend WithEvents Label7 As Label
+    Friend WithEvents txtid As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents ToolStripSeparator1 As ToolStripSeparator
     Friend WithEvents ToolStripButton3 As ToolStripButton
+    Friend WithEvents ToolStripButton2 As ToolStripButton
 End Class

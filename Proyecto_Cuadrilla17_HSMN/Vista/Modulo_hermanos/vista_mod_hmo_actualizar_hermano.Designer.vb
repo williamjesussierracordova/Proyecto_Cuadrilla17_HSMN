@@ -25,17 +25,19 @@ Partial Class vista_mod_hmo_actualizar_hermano
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(vista_mod_hmo_actualizar_hermano))
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
-        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
-        Me.TextBox9 = New System.Windows.Forms.TextBox()
-        Me.TextBox8 = New System.Windows.Forms.TextBox()
-        Me.TextBox7 = New System.Windows.Forms.TextBox()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.id = New System.Windows.Forms.TextBox()
+        Me.Label22 = New System.Windows.Forms.Label()
+        Me.dt_nacimiento = New System.Windows.Forms.DateTimePicker()
+        Me.dni = New System.Windows.Forms.TextBox()
+        Me.correo_electronico = New System.Windows.Forms.TextBox()
+        Me.celular = New System.Windows.Forms.TextBox()
+        Me.telefono = New System.Windows.Forms.TextBox()
+        Me.distrito = New System.Windows.Forms.TextBox()
+        Me.direccion = New System.Windows.Forms.TextBox()
+        Me.apellidomaterno = New System.Windows.Forms.TextBox()
+        Me.apellidopaterno = New System.Windows.Forms.TextBox()
+        Me.nombres = New System.Windows.Forms.TextBox()
+        Me.cbxestadocivil = New System.Windows.Forms.ComboBox()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
@@ -48,13 +50,13 @@ Partial Class vista_mod_hmo_actualizar_hermano
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
-        Me.TextBox16 = New System.Windows.Forms.TextBox()
-        Me.TextBox15 = New System.Windows.Forms.TextBox()
-        Me.TextBox14 = New System.Windows.Forms.TextBox()
-        Me.TextBox13 = New System.Windows.Forms.TextBox()
-        Me.TextBox12 = New System.Windows.Forms.TextBox()
-        Me.TextBox11 = New System.Windows.Forms.TextBox()
-        Me.TextBox10 = New System.Windows.Forms.TextBox()
+        Me.cargo = New System.Windows.Forms.TextBox()
+        Me.telefono_laboral = New System.Windows.Forms.TextBox()
+        Me.distrito_laboral = New System.Windows.Forms.TextBox()
+        Me.direccion_laboral = New System.Windows.Forms.TextBox()
+        Me.centro_laboral = New System.Windows.Forms.TextBox()
+        Me.profesion = New System.Windows.Forms.TextBox()
+        Me.conyuge = New System.Windows.Forms.TextBox()
         Me.Label18 = New System.Windows.Forms.Label()
         Me.Label17 = New System.Windows.Forms.Label()
         Me.Label16 = New System.Windows.Forms.Label()
@@ -63,24 +65,24 @@ Partial Class vista_mod_hmo_actualizar_hermano
         Me.Label13 = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.TabPage3 = New System.Windows.Forms.TabPage()
-        Me.TextBox17 = New System.Windows.Forms.TextBox()
-        Me.NumericUpDown2 = New System.Windows.Forms.NumericUpDown()
-        Me.NumericUpDown1 = New System.Windows.Forms.NumericUpDown()
+        Me.codigo_hermandad = New System.Windows.Forms.TextBox()
+        Me.cuadrilla = New System.Windows.Forms.NumericUpDown()
+        Me.number_anio_ingreso = New System.Windows.Forms.NumericUpDown()
         Me.Label21 = New System.Windows.Forms.Label()
         Me.Label20 = New System.Windows.Forms.Label()
         Me.Label19 = New System.Windows.Forms.Label()
         Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
-        Me.ToolStripButton5 = New System.Windows.Forms.ToolStripButton()
-        Me.ToolStripSeparator4 = New System.Windows.Forms.ToolStripSeparator()
+        Me.ToolStripButton2 = New System.Windows.Forms.ToolStripButton()
+        Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
+        Me.ToolStripButton1 = New System.Windows.Forms.ToolStripButton()
+        Me.ToolStripSeparator2 = New System.Windows.Forms.ToolStripSeparator()
         Me.ToolStripButton4 = New System.Windows.Forms.ToolStripButton()
-        Me.Label22 = New System.Windows.Forms.Label()
-        Me.TextBox18 = New System.Windows.Forms.TextBox()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         Me.TabPage2.SuspendLayout()
         Me.TabPage3.SuspendLayout()
-        CType(Me.NumericUpDown2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.cuadrilla, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.number_anio_ingreso, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.ToolStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -97,19 +99,19 @@ Partial Class vista_mod_hmo_actualizar_hermano
         '
         'TabPage1
         '
-        Me.TabPage1.Controls.Add(Me.TextBox18)
+        Me.TabPage1.Controls.Add(Me.id)
         Me.TabPage1.Controls.Add(Me.Label22)
-        Me.TabPage1.Controls.Add(Me.DateTimePicker1)
-        Me.TabPage1.Controls.Add(Me.TextBox9)
-        Me.TabPage1.Controls.Add(Me.TextBox8)
-        Me.TabPage1.Controls.Add(Me.TextBox7)
-        Me.TabPage1.Controls.Add(Me.TextBox6)
-        Me.TabPage1.Controls.Add(Me.TextBox5)
-        Me.TabPage1.Controls.Add(Me.TextBox4)
-        Me.TabPage1.Controls.Add(Me.TextBox3)
-        Me.TabPage1.Controls.Add(Me.TextBox2)
-        Me.TabPage1.Controls.Add(Me.TextBox1)
-        Me.TabPage1.Controls.Add(Me.ComboBox1)
+        Me.TabPage1.Controls.Add(Me.dt_nacimiento)
+        Me.TabPage1.Controls.Add(Me.dni)
+        Me.TabPage1.Controls.Add(Me.correo_electronico)
+        Me.TabPage1.Controls.Add(Me.celular)
+        Me.TabPage1.Controls.Add(Me.telefono)
+        Me.TabPage1.Controls.Add(Me.distrito)
+        Me.TabPage1.Controls.Add(Me.direccion)
+        Me.TabPage1.Controls.Add(Me.apellidomaterno)
+        Me.TabPage1.Controls.Add(Me.apellidopaterno)
+        Me.TabPage1.Controls.Add(Me.nombres)
+        Me.TabPage1.Controls.Add(Me.cbxestadocivil)
         Me.TabPage1.Controls.Add(Me.Label11)
         Me.TabPage1.Controls.Add(Me.Label10)
         Me.TabPage1.Controls.Add(Me.Label9)
@@ -129,84 +131,100 @@ Partial Class vista_mod_hmo_actualizar_hermano
         Me.TabPage1.Text = "Datos generales"
         Me.TabPage1.UseVisualStyleBackColor = True
         '
-        'DateTimePicker1
+        'id
         '
-        Me.DateTimePicker1.Location = New System.Drawing.Point(201, 173)
-        Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(319, 26)
-        Me.DateTimePicker1.TabIndex = 21
+        Me.id.Location = New System.Drawing.Point(201, 12)
+        Me.id.Name = "id"
+        Me.id.Size = New System.Drawing.Size(262, 26)
+        Me.id.TabIndex = 23
         '
-        'TextBox9
+        'Label22
         '
-        Me.TextBox9.Location = New System.Drawing.Point(201, 422)
-        Me.TextBox9.Name = "TextBox9"
-        Me.TextBox9.Size = New System.Drawing.Size(319, 26)
-        Me.TextBox9.TabIndex = 20
+        Me.Label22.AutoSize = True
+        Me.Label22.Location = New System.Drawing.Point(26, 18)
+        Me.Label22.Name = "Label22"
+        Me.Label22.Size = New System.Drawing.Size(30, 20)
+        Me.Label22.TabIndex = 22
+        Me.Label22.Text = "ID:"
         '
-        'TextBox8
+        'dt_nacimiento
         '
-        Me.TextBox8.Location = New System.Drawing.Point(201, 382)
-        Me.TextBox8.Name = "TextBox8"
-        Me.TextBox8.Size = New System.Drawing.Size(319, 26)
-        Me.TextBox8.TabIndex = 19
+        Me.dt_nacimiento.Location = New System.Drawing.Point(201, 173)
+        Me.dt_nacimiento.Name = "dt_nacimiento"
+        Me.dt_nacimiento.Size = New System.Drawing.Size(365, 26)
+        Me.dt_nacimiento.TabIndex = 21
         '
-        'TextBox7
+        'dni
         '
-        Me.TextBox7.Location = New System.Drawing.Point(201, 342)
-        Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.Size = New System.Drawing.Size(319, 26)
-        Me.TextBox7.TabIndex = 18
+        Me.dni.Location = New System.Drawing.Point(201, 422)
+        Me.dni.Name = "dni"
+        Me.dni.Size = New System.Drawing.Size(365, 26)
+        Me.dni.TabIndex = 20
         '
-        'TextBox6
+        'correo_electronico
         '
-        Me.TextBox6.Location = New System.Drawing.Point(201, 301)
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(319, 26)
-        Me.TextBox6.TabIndex = 17
+        Me.correo_electronico.Location = New System.Drawing.Point(201, 382)
+        Me.correo_electronico.Name = "correo_electronico"
+        Me.correo_electronico.Size = New System.Drawing.Size(365, 26)
+        Me.correo_electronico.TabIndex = 19
         '
-        'TextBox5
+        'celular
         '
-        Me.TextBox5.Location = New System.Drawing.Point(201, 259)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(319, 26)
-        Me.TextBox5.TabIndex = 16
+        Me.celular.Location = New System.Drawing.Point(201, 342)
+        Me.celular.Name = "celular"
+        Me.celular.Size = New System.Drawing.Size(365, 26)
+        Me.celular.TabIndex = 18
         '
-        'TextBox4
+        'telefono
         '
-        Me.TextBox4.Location = New System.Drawing.Point(201, 217)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(319, 26)
-        Me.TextBox4.TabIndex = 15
+        Me.telefono.Location = New System.Drawing.Point(201, 301)
+        Me.telefono.Name = "telefono"
+        Me.telefono.Size = New System.Drawing.Size(365, 26)
+        Me.telefono.TabIndex = 17
         '
-        'TextBox3
+        'distrito
         '
-        Me.TextBox3.Location = New System.Drawing.Point(201, 128)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(319, 26)
-        Me.TextBox3.TabIndex = 14
+        Me.distrito.Location = New System.Drawing.Point(201, 259)
+        Me.distrito.Name = "distrito"
+        Me.distrito.Size = New System.Drawing.Size(365, 26)
+        Me.distrito.TabIndex = 16
         '
-        'TextBox2
+        'direccion
         '
-        Me.TextBox2.Location = New System.Drawing.Point(201, 88)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(319, 26)
-        Me.TextBox2.TabIndex = 13
+        Me.direccion.Location = New System.Drawing.Point(201, 217)
+        Me.direccion.Name = "direccion"
+        Me.direccion.Size = New System.Drawing.Size(545, 26)
+        Me.direccion.TabIndex = 15
         '
-        'TextBox1
+        'apellidomaterno
         '
-        Me.TextBox1.Location = New System.Drawing.Point(201, 52)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(262, 26)
-        Me.TextBox1.TabIndex = 12
+        Me.apellidomaterno.Location = New System.Drawing.Point(201, 128)
+        Me.apellidomaterno.Name = "apellidomaterno"
+        Me.apellidomaterno.Size = New System.Drawing.Size(365, 26)
+        Me.apellidomaterno.TabIndex = 14
         '
-        'ComboBox1
+        'apellidopaterno
         '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"Soltero/a", "Casado/a", "Viudo/a", "Divorciado/a", "Separado/a"})
-        Me.ComboBox1.Location = New System.Drawing.Point(586, 50)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(160, 28)
-        Me.ComboBox1.TabIndex = 11
+        Me.apellidopaterno.Location = New System.Drawing.Point(201, 88)
+        Me.apellidopaterno.Name = "apellidopaterno"
+        Me.apellidopaterno.Size = New System.Drawing.Size(365, 26)
+        Me.apellidopaterno.TabIndex = 13
+        '
+        'nombres
+        '
+        Me.nombres.Location = New System.Drawing.Point(201, 52)
+        Me.nombres.Name = "nombres"
+        Me.nombres.Size = New System.Drawing.Size(262, 26)
+        Me.nombres.TabIndex = 12
+        '
+        'cbxestadocivil
+        '
+        Me.cbxestadocivil.FormattingEnabled = True
+        Me.cbxestadocivil.Items.AddRange(New Object() {"SOLTERO", "CONVIVIENTE", "CASADO", "DIVORCIADO", "VIUDO"})
+        Me.cbxestadocivil.Location = New System.Drawing.Point(586, 50)
+        Me.cbxestadocivil.Name = "cbxestadocivil"
+        Me.cbxestadocivil.Size = New System.Drawing.Size(160, 28)
+        Me.cbxestadocivil.TabIndex = 11
         '
         'Label11
         '
@@ -276,18 +294,18 @@ Partial Class vista_mod_hmo_actualizar_hermano
         Me.Label4.AutoSize = True
         Me.Label4.Location = New System.Drawing.Point(28, 91)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(132, 20)
+        Me.Label4.Size = New System.Drawing.Size(128, 20)
         Me.Label4.TabIndex = 3
-        Me.Label4.Text = "Apellido materno:"
+        Me.Label4.Text = "Apellido paterno:"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
         Me.Label3.Location = New System.Drawing.Point(28, 134)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(128, 20)
+        Me.Label3.Size = New System.Drawing.Size(132, 20)
         Me.Label3.TabIndex = 2
-        Me.Label3.Text = "Apellido paterno:"
+        Me.Label3.Text = "Apellido materno:"
         '
         'Label2
         '
@@ -309,13 +327,13 @@ Partial Class vista_mod_hmo_actualizar_hermano
         '
         'TabPage2
         '
-        Me.TabPage2.Controls.Add(Me.TextBox16)
-        Me.TabPage2.Controls.Add(Me.TextBox15)
-        Me.TabPage2.Controls.Add(Me.TextBox14)
-        Me.TabPage2.Controls.Add(Me.TextBox13)
-        Me.TabPage2.Controls.Add(Me.TextBox12)
-        Me.TabPage2.Controls.Add(Me.TextBox11)
-        Me.TabPage2.Controls.Add(Me.TextBox10)
+        Me.TabPage2.Controls.Add(Me.cargo)
+        Me.TabPage2.Controls.Add(Me.telefono_laboral)
+        Me.TabPage2.Controls.Add(Me.distrito_laboral)
+        Me.TabPage2.Controls.Add(Me.direccion_laboral)
+        Me.TabPage2.Controls.Add(Me.centro_laboral)
+        Me.TabPage2.Controls.Add(Me.profesion)
+        Me.TabPage2.Controls.Add(Me.conyuge)
         Me.TabPage2.Controls.Add(Me.Label18)
         Me.TabPage2.Controls.Add(Me.Label17)
         Me.TabPage2.Controls.Add(Me.Label16)
@@ -326,59 +344,59 @@ Partial Class vista_mod_hmo_actualizar_hermano
         Me.TabPage2.Location = New System.Drawing.Point(4, 29)
         Me.TabPage2.Name = "TabPage2"
         Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage2.Size = New System.Drawing.Size(766, 452)
+        Me.TabPage2.Size = New System.Drawing.Size(766, 466)
         Me.TabPage2.TabIndex = 1
         Me.TabPage2.Text = "Adicionales"
         Me.TabPage2.UseVisualStyleBackColor = True
         '
-        'TextBox16
+        'cargo
         '
-        Me.TextBox16.Location = New System.Drawing.Point(214, 287)
-        Me.TextBox16.Name = "TextBox16"
-        Me.TextBox16.Size = New System.Drawing.Size(513, 26)
-        Me.TextBox16.TabIndex = 20
+        Me.cargo.Location = New System.Drawing.Point(214, 287)
+        Me.cargo.Name = "cargo"
+        Me.cargo.Size = New System.Drawing.Size(513, 26)
+        Me.cargo.TabIndex = 20
         '
-        'TextBox15
+        'telefono_laboral
         '
-        Me.TextBox15.Location = New System.Drawing.Point(214, 243)
-        Me.TextBox15.Name = "TextBox15"
-        Me.TextBox15.Size = New System.Drawing.Size(513, 26)
-        Me.TextBox15.TabIndex = 19
+        Me.telefono_laboral.Location = New System.Drawing.Point(214, 243)
+        Me.telefono_laboral.Name = "telefono_laboral"
+        Me.telefono_laboral.Size = New System.Drawing.Size(513, 26)
+        Me.telefono_laboral.TabIndex = 19
         '
-        'TextBox14
+        'distrito_laboral
         '
-        Me.TextBox14.Location = New System.Drawing.Point(214, 202)
-        Me.TextBox14.Name = "TextBox14"
-        Me.TextBox14.Size = New System.Drawing.Size(513, 26)
-        Me.TextBox14.TabIndex = 18
+        Me.distrito_laboral.Location = New System.Drawing.Point(214, 202)
+        Me.distrito_laboral.Name = "distrito_laboral"
+        Me.distrito_laboral.Size = New System.Drawing.Size(513, 26)
+        Me.distrito_laboral.TabIndex = 18
         '
-        'TextBox13
+        'direccion_laboral
         '
-        Me.TextBox13.Location = New System.Drawing.Point(214, 156)
-        Me.TextBox13.Name = "TextBox13"
-        Me.TextBox13.Size = New System.Drawing.Size(513, 26)
-        Me.TextBox13.TabIndex = 17
+        Me.direccion_laboral.Location = New System.Drawing.Point(214, 156)
+        Me.direccion_laboral.Name = "direccion_laboral"
+        Me.direccion_laboral.Size = New System.Drawing.Size(513, 26)
+        Me.direccion_laboral.TabIndex = 17
         '
-        'TextBox12
+        'centro_laboral
         '
-        Me.TextBox12.Location = New System.Drawing.Point(214, 111)
-        Me.TextBox12.Name = "TextBox12"
-        Me.TextBox12.Size = New System.Drawing.Size(513, 26)
-        Me.TextBox12.TabIndex = 16
+        Me.centro_laboral.Location = New System.Drawing.Point(214, 111)
+        Me.centro_laboral.Name = "centro_laboral"
+        Me.centro_laboral.Size = New System.Drawing.Size(513, 26)
+        Me.centro_laboral.TabIndex = 16
         '
-        'TextBox11
+        'profesion
         '
-        Me.TextBox11.Location = New System.Drawing.Point(214, 66)
-        Me.TextBox11.Name = "TextBox11"
-        Me.TextBox11.Size = New System.Drawing.Size(513, 26)
-        Me.TextBox11.TabIndex = 15
+        Me.profesion.Location = New System.Drawing.Point(214, 66)
+        Me.profesion.Name = "profesion"
+        Me.profesion.Size = New System.Drawing.Size(513, 26)
+        Me.profesion.TabIndex = 15
         '
-        'TextBox10
+        'conyuge
         '
-        Me.TextBox10.Location = New System.Drawing.Point(214, 22)
-        Me.TextBox10.Name = "TextBox10"
-        Me.TextBox10.Size = New System.Drawing.Size(513, 26)
-        Me.TextBox10.TabIndex = 14
+        Me.conyuge.Location = New System.Drawing.Point(214, 22)
+        Me.conyuge.Name = "conyuge"
+        Me.conyuge.Size = New System.Drawing.Size(513, 26)
+        Me.conyuge.TabIndex = 14
         '
         'Label18
         '
@@ -445,43 +463,43 @@ Partial Class vista_mod_hmo_actualizar_hermano
         '
         'TabPage3
         '
-        Me.TabPage3.Controls.Add(Me.TextBox17)
-        Me.TabPage3.Controls.Add(Me.NumericUpDown2)
-        Me.TabPage3.Controls.Add(Me.NumericUpDown1)
+        Me.TabPage3.Controls.Add(Me.codigo_hermandad)
+        Me.TabPage3.Controls.Add(Me.cuadrilla)
+        Me.TabPage3.Controls.Add(Me.number_anio_ingreso)
         Me.TabPage3.Controls.Add(Me.Label21)
         Me.TabPage3.Controls.Add(Me.Label20)
         Me.TabPage3.Controls.Add(Me.Label19)
         Me.TabPage3.Location = New System.Drawing.Point(4, 29)
         Me.TabPage3.Name = "TabPage3"
-        Me.TabPage3.Size = New System.Drawing.Size(766, 452)
+        Me.TabPage3.Size = New System.Drawing.Size(766, 466)
         Me.TabPage3.TabIndex = 2
         Me.TabPage3.Text = "Hermandad"
         Me.TabPage3.UseVisualStyleBackColor = True
         '
-        'TextBox17
+        'codigo_hermandad
         '
-        Me.TextBox17.Location = New System.Drawing.Point(177, 120)
-        Me.TextBox17.Name = "TextBox17"
-        Me.TextBox17.Size = New System.Drawing.Size(100, 26)
-        Me.TextBox17.TabIndex = 10
+        Me.codigo_hermandad.Location = New System.Drawing.Point(177, 120)
+        Me.codigo_hermandad.Name = "codigo_hermandad"
+        Me.codigo_hermandad.Size = New System.Drawing.Size(195, 26)
+        Me.codigo_hermandad.TabIndex = 10
         '
-        'NumericUpDown2
+        'cuadrilla
         '
-        Me.NumericUpDown2.Location = New System.Drawing.Point(177, 69)
-        Me.NumericUpDown2.Maximum = New Decimal(New Integer() {20, 0, 0, 0})
-        Me.NumericUpDown2.Name = "NumericUpDown2"
-        Me.NumericUpDown2.Size = New System.Drawing.Size(195, 26)
-        Me.NumericUpDown2.TabIndex = 9
-        Me.NumericUpDown2.Value = New Decimal(New Integer() {1, 0, 0, 0})
+        Me.cuadrilla.Location = New System.Drawing.Point(177, 69)
+        Me.cuadrilla.Maximum = New Decimal(New Integer() {20, 0, 0, 0})
+        Me.cuadrilla.Name = "cuadrilla"
+        Me.cuadrilla.Size = New System.Drawing.Size(195, 26)
+        Me.cuadrilla.TabIndex = 9
+        Me.cuadrilla.Value = New Decimal(New Integer() {1, 0, 0, 0})
         '
-        'NumericUpDown1
+        'number_anio_ingreso
         '
-        Me.NumericUpDown1.Location = New System.Drawing.Point(177, 23)
-        Me.NumericUpDown1.Maximum = New Decimal(New Integer() {2100, 0, 0, 0})
-        Me.NumericUpDown1.Name = "NumericUpDown1"
-        Me.NumericUpDown1.Size = New System.Drawing.Size(195, 26)
-        Me.NumericUpDown1.TabIndex = 8
-        Me.NumericUpDown1.Value = New Decimal(New Integer() {1900, 0, 0, 0})
+        Me.number_anio_ingreso.Location = New System.Drawing.Point(177, 23)
+        Me.number_anio_ingreso.Maximum = New Decimal(New Integer() {2100, 0, 0, 0})
+        Me.number_anio_ingreso.Name = "number_anio_ingreso"
+        Me.number_anio_ingreso.Size = New System.Drawing.Size(195, 26)
+        Me.number_anio_ingreso.TabIndex = 8
+        Me.number_anio_ingreso.Value = New Decimal(New Integer() {1900, 0, 0, 0})
         '
         'Label21
         '
@@ -513,7 +531,7 @@ Partial Class vista_mod_hmo_actualizar_hermano
         'ToolStrip1
         '
         Me.ToolStrip1.ImageScalingSize = New System.Drawing.Size(35, 35)
-        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripButton5, Me.ToolStripSeparator4, Me.ToolStripButton4})
+        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripButton2, Me.ToolStripSeparator1, Me.ToolStripButton1, Me.ToolStripSeparator2, Me.ToolStripButton4})
         Me.ToolStrip1.Location = New System.Drawing.Point(0, 0)
         Me.ToolStrip1.Name = "ToolStrip1"
         Me.ToolStrip1.Padding = New System.Windows.Forms.Padding(0, 5, 4, 5)
@@ -521,21 +539,35 @@ Partial Class vista_mod_hmo_actualizar_hermano
         Me.ToolStrip1.TabIndex = 4
         Me.ToolStrip1.Text = "ToolStrip1"
         '
-        'ToolStripButton5
+        'ToolStripButton2
         '
-        Me.ToolStripButton5.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.ToolStripButton5.Image = CType(resources.GetObject("ToolStripButton5.Image"), System.Drawing.Image)
-        Me.ToolStripButton5.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.ToolStripButton5.Margin = New System.Windows.Forms.Padding(10, 1, 10, 2)
-        Me.ToolStripButton5.Name = "ToolStripButton5"
-        Me.ToolStripButton5.Size = New System.Drawing.Size(39, 41)
-        Me.ToolStripButton5.Text = "ToolStripButton5"
-        Me.ToolStripButton5.ToolTipText = "Guardar registro"
+        Me.ToolStripButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.ToolStripButton2.Image = CType(resources.GetObject("ToolStripButton2.Image"), System.Drawing.Image)
+        Me.ToolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.ToolStripButton2.Margin = New System.Windows.Forms.Padding(10, 2, 10, 3)
+        Me.ToolStripButton2.Name = "ToolStripButton2"
+        Me.ToolStripButton2.Size = New System.Drawing.Size(39, 39)
+        Me.ToolStripButton2.ToolTipText = "Cancelar Operación"
         '
-        'ToolStripSeparator4
+        'ToolStripSeparator1
         '
-        Me.ToolStripSeparator4.Name = "ToolStripSeparator4"
-        Me.ToolStripSeparator4.Size = New System.Drawing.Size(6, 44)
+        Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
+        Me.ToolStripSeparator1.Size = New System.Drawing.Size(6, 44)
+        '
+        'ToolStripButton1
+        '
+        Me.ToolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.ToolStripButton1.Image = CType(resources.GetObject("ToolStripButton1.Image"), System.Drawing.Image)
+        Me.ToolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.ToolStripButton1.Margin = New System.Windows.Forms.Padding(10, 2, 10, 3)
+        Me.ToolStripButton1.Name = "ToolStripButton1"
+        Me.ToolStripButton1.Size = New System.Drawing.Size(39, 39)
+        Me.ToolStripButton1.ToolTipText = "Cancelar Operación"
+        '
+        'ToolStripSeparator2
+        '
+        Me.ToolStripSeparator2.Name = "ToolStripSeparator2"
+        Me.ToolStripSeparator2.Size = New System.Drawing.Size(6, 44)
         '
         'ToolStripButton4
         '
@@ -546,22 +578,6 @@ Partial Class vista_mod_hmo_actualizar_hermano
         Me.ToolStripButton4.Name = "ToolStripButton4"
         Me.ToolStripButton4.Size = New System.Drawing.Size(39, 39)
         Me.ToolStripButton4.ToolTipText = "Cancelar Operación"
-        '
-        'Label22
-        '
-        Me.Label22.AutoSize = True
-        Me.Label22.Location = New System.Drawing.Point(26, 18)
-        Me.Label22.Name = "Label22"
-        Me.Label22.Size = New System.Drawing.Size(30, 20)
-        Me.Label22.TabIndex = 22
-        Me.Label22.Text = "ID:"
-        '
-        'TextBox18
-        '
-        Me.TextBox18.Location = New System.Drawing.Point(201, 12)
-        Me.TextBox18.Name = "TextBox18"
-        Me.TextBox18.Size = New System.Drawing.Size(262, 26)
-        Me.TextBox18.TabIndex = 23
         '
         'vista_mod_hmo_actualizar_hermano
         '
@@ -579,8 +595,8 @@ Partial Class vista_mod_hmo_actualizar_hermano
         Me.TabPage2.PerformLayout()
         Me.TabPage3.ResumeLayout(False)
         Me.TabPage3.PerformLayout()
-        CType(Me.NumericUpDown2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.cuadrilla, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.number_anio_ingreso, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ToolStrip1.ResumeLayout(False)
         Me.ToolStrip1.PerformLayout()
         Me.ResumeLayout(False)
@@ -590,17 +606,17 @@ Partial Class vista_mod_hmo_actualizar_hermano
 
     Friend WithEvents TabControl1 As TabControl
     Friend WithEvents TabPage1 As TabPage
-    Friend WithEvents DateTimePicker1 As DateTimePicker
-    Friend WithEvents TextBox9 As TextBox
-    Friend WithEvents TextBox8 As TextBox
-    Friend WithEvents TextBox7 As TextBox
-    Friend WithEvents TextBox6 As TextBox
-    Friend WithEvents TextBox5 As TextBox
-    Friend WithEvents TextBox4 As TextBox
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents dt_nacimiento As DateTimePicker
+    Friend WithEvents dni As TextBox
+    Friend WithEvents correo_electronico As TextBox
+    Friend WithEvents celular As TextBox
+    Friend WithEvents telefono As TextBox
+    Friend WithEvents distrito As TextBox
+    Friend WithEvents direccion As TextBox
+    Friend WithEvents apellidomaterno As TextBox
+    Friend WithEvents apellidopaterno As TextBox
+    Friend WithEvents nombres As TextBox
+    Friend WithEvents cbxestadocivil As ComboBox
     Friend WithEvents Label11 As Label
     Friend WithEvents Label10 As Label
     Friend WithEvents Label9 As Label
@@ -613,13 +629,13 @@ Partial Class vista_mod_hmo_actualizar_hermano
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
     Friend WithEvents TabPage2 As TabPage
-    Friend WithEvents TextBox16 As TextBox
-    Friend WithEvents TextBox15 As TextBox
-    Friend WithEvents TextBox14 As TextBox
-    Friend WithEvents TextBox13 As TextBox
-    Friend WithEvents TextBox12 As TextBox
-    Friend WithEvents TextBox11 As TextBox
-    Friend WithEvents TextBox10 As TextBox
+    Friend WithEvents cargo As TextBox
+    Friend WithEvents telefono_laboral As TextBox
+    Friend WithEvents distrito_laboral As TextBox
+    Friend WithEvents direccion_laboral As TextBox
+    Friend WithEvents centro_laboral As TextBox
+    Friend WithEvents profesion As TextBox
+    Friend WithEvents conyuge As TextBox
     Friend WithEvents Label18 As Label
     Friend WithEvents Label17 As Label
     Friend WithEvents Label16 As Label
@@ -628,16 +644,18 @@ Partial Class vista_mod_hmo_actualizar_hermano
     Friend WithEvents Label13 As Label
     Friend WithEvents Label12 As Label
     Friend WithEvents TabPage3 As TabPage
-    Friend WithEvents TextBox17 As TextBox
-    Friend WithEvents NumericUpDown2 As NumericUpDown
-    Friend WithEvents NumericUpDown1 As NumericUpDown
+    Friend WithEvents codigo_hermandad As TextBox
+    Friend WithEvents cuadrilla As NumericUpDown
+    Friend WithEvents number_anio_ingreso As NumericUpDown
     Friend WithEvents Label21 As Label
     Friend WithEvents Label20 As Label
     Friend WithEvents Label19 As Label
     Friend WithEvents ToolStrip1 As ToolStrip
-    Friend WithEvents ToolStripButton5 As ToolStripButton
-    Friend WithEvents ToolStripSeparator4 As ToolStripSeparator
     Friend WithEvents ToolStripButton4 As ToolStripButton
-    Friend WithEvents TextBox18 As TextBox
+    Friend WithEvents id As TextBox
     Friend WithEvents Label22 As Label
+    Friend WithEvents ToolStripButton2 As ToolStripButton
+    Friend WithEvents ToolStripSeparator1 As ToolStripSeparator
+    Friend WithEvents ToolStripButton1 As ToolStripButton
+    Friend WithEvents ToolStripSeparator2 As ToolStripSeparator
 End Class

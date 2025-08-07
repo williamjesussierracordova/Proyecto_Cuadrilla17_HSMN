@@ -29,57 +29,57 @@ Partial Class vista_mod_hmo_registrar_hermano
         Me.ToolStripButton4 = New System.Windows.Forms.ToolStripButton()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
-        Me.TabPage2 = New System.Windows.Forms.TabPage()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.Label10 = New System.Windows.Forms.Label()
+        Me.dt_fecha_nacimiento = New System.Windows.Forms.DateTimePicker()
+        Me.dni = New System.Windows.Forms.TextBox()
+        Me.correo_electronico = New System.Windows.Forms.TextBox()
+        Me.celular = New System.Windows.Forms.TextBox()
+        Me.telefono = New System.Windows.Forms.TextBox()
+        Me.distrito = New System.Windows.Forms.TextBox()
+        Me.direccion = New System.Windows.Forms.TextBox()
+        Me.apellido_materno = New System.Windows.Forms.TextBox()
+        Me.apellido_paterno = New System.Windows.Forms.TextBox()
+        Me.nombres = New System.Windows.Forms.TextBox()
+        Me.cbx_estado_civil = New System.Windows.Forms.ComboBox()
         Me.Label11 = New System.Windows.Forms.Label()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
-        Me.TextBox7 = New System.Windows.Forms.TextBox()
-        Me.TextBox8 = New System.Windows.Forms.TextBox()
-        Me.TextBox9 = New System.Windows.Forms.TextBox()
-        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
-        Me.TabPage3 = New System.Windows.Forms.TabPage()
-        Me.Label12 = New System.Windows.Forms.Label()
-        Me.Label13 = New System.Windows.Forms.Label()
-        Me.Label14 = New System.Windows.Forms.Label()
-        Me.Label15 = New System.Windows.Forms.Label()
-        Me.Label16 = New System.Windows.Forms.Label()
-        Me.Label17 = New System.Windows.Forms.Label()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.TabPage2 = New System.Windows.Forms.TabPage()
+        Me.cargo_laboral = New System.Windows.Forms.TextBox()
+        Me.telefono_laboral = New System.Windows.Forms.TextBox()
+        Me.distrito_laboral = New System.Windows.Forms.TextBox()
+        Me.direccion_laboral = New System.Windows.Forms.TextBox()
+        Me.centro_laboral = New System.Windows.Forms.TextBox()
+        Me.profesion = New System.Windows.Forms.TextBox()
+        Me.conyuge = New System.Windows.Forms.TextBox()
         Me.Label18 = New System.Windows.Forms.Label()
-        Me.TextBox10 = New System.Windows.Forms.TextBox()
-        Me.TextBox11 = New System.Windows.Forms.TextBox()
-        Me.TextBox12 = New System.Windows.Forms.TextBox()
-        Me.TextBox13 = New System.Windows.Forms.TextBox()
-        Me.TextBox14 = New System.Windows.Forms.TextBox()
-        Me.TextBox15 = New System.Windows.Forms.TextBox()
-        Me.TextBox16 = New System.Windows.Forms.TextBox()
-        Me.Label19 = New System.Windows.Forms.Label()
-        Me.Label20 = New System.Windows.Forms.Label()
+        Me.Label17 = New System.Windows.Forms.Label()
+        Me.Label16 = New System.Windows.Forms.Label()
+        Me.Label15 = New System.Windows.Forms.Label()
+        Me.Label14 = New System.Windows.Forms.Label()
+        Me.Label13 = New System.Windows.Forms.Label()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.TabPage3 = New System.Windows.Forms.TabPage()
+        Me.codigo_hermandad = New System.Windows.Forms.TextBox()
+        Me.number_cuadrilla = New System.Windows.Forms.NumericUpDown()
+        Me.number_ingreso = New System.Windows.Forms.NumericUpDown()
         Me.Label21 = New System.Windows.Forms.Label()
-        Me.NumericUpDown1 = New System.Windows.Forms.NumericUpDown()
-        Me.NumericUpDown2 = New System.Windows.Forms.NumericUpDown()
-        Me.TextBox17 = New System.Windows.Forms.TextBox()
+        Me.Label20 = New System.Windows.Forms.Label()
+        Me.Label19 = New System.Windows.Forms.Label()
         Me.ToolStrip1.SuspendLayout()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         Me.TabPage2.SuspendLayout()
         Me.TabPage3.SuspendLayout()
-        CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.number_cuadrilla, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.number_ingreso, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'ToolStrip1
@@ -132,17 +132,17 @@ Partial Class vista_mod_hmo_registrar_hermano
         '
         'TabPage1
         '
-        Me.TabPage1.Controls.Add(Me.DateTimePicker1)
-        Me.TabPage1.Controls.Add(Me.TextBox9)
-        Me.TabPage1.Controls.Add(Me.TextBox8)
-        Me.TabPage1.Controls.Add(Me.TextBox7)
-        Me.TabPage1.Controls.Add(Me.TextBox6)
-        Me.TabPage1.Controls.Add(Me.TextBox5)
-        Me.TabPage1.Controls.Add(Me.TextBox4)
-        Me.TabPage1.Controls.Add(Me.TextBox3)
-        Me.TabPage1.Controls.Add(Me.TextBox2)
-        Me.TabPage1.Controls.Add(Me.TextBox1)
-        Me.TabPage1.Controls.Add(Me.ComboBox1)
+        Me.TabPage1.Controls.Add(Me.dt_fecha_nacimiento)
+        Me.TabPage1.Controls.Add(Me.dni)
+        Me.TabPage1.Controls.Add(Me.correo_electronico)
+        Me.TabPage1.Controls.Add(Me.celular)
+        Me.TabPage1.Controls.Add(Me.telefono)
+        Me.TabPage1.Controls.Add(Me.distrito)
+        Me.TabPage1.Controls.Add(Me.direccion)
+        Me.TabPage1.Controls.Add(Me.apellido_materno)
+        Me.TabPage1.Controls.Add(Me.apellido_paterno)
+        Me.TabPage1.Controls.Add(Me.nombres)
+        Me.TabPage1.Controls.Add(Me.cbx_estado_civil)
         Me.TabPage1.Controls.Add(Me.Label11)
         Me.TabPage1.Controls.Add(Me.Label10)
         Me.TabPage1.Controls.Add(Me.Label9)
@@ -162,15 +162,193 @@ Partial Class vista_mod_hmo_registrar_hermano
         Me.TabPage1.Text = "Datos generales"
         Me.TabPage1.UseVisualStyleBackColor = True
         '
+        'dt_fecha_nacimiento
+        '
+        Me.dt_fecha_nacimiento.Location = New System.Drawing.Point(201, 142)
+        Me.dt_fecha_nacimiento.Name = "dt_fecha_nacimiento"
+        Me.dt_fecha_nacimiento.Size = New System.Drawing.Size(367, 26)
+        Me.dt_fecha_nacimiento.TabIndex = 21
+        '
+        'dni
+        '
+        Me.dni.Location = New System.Drawing.Point(201, 391)
+        Me.dni.Name = "dni"
+        Me.dni.Size = New System.Drawing.Size(367, 26)
+        Me.dni.TabIndex = 20
+        '
+        'correo_electronico
+        '
+        Me.correo_electronico.Location = New System.Drawing.Point(201, 351)
+        Me.correo_electronico.Name = "correo_electronico"
+        Me.correo_electronico.Size = New System.Drawing.Size(367, 26)
+        Me.correo_electronico.TabIndex = 19
+        '
+        'celular
+        '
+        Me.celular.Location = New System.Drawing.Point(201, 311)
+        Me.celular.Name = "celular"
+        Me.celular.Size = New System.Drawing.Size(367, 26)
+        Me.celular.TabIndex = 18
+        '
+        'telefono
+        '
+        Me.telefono.Location = New System.Drawing.Point(201, 270)
+        Me.telefono.Name = "telefono"
+        Me.telefono.Size = New System.Drawing.Size(367, 26)
+        Me.telefono.TabIndex = 17
+        '
+        'distrito
+        '
+        Me.distrito.Location = New System.Drawing.Point(201, 228)
+        Me.distrito.Name = "distrito"
+        Me.distrito.Size = New System.Drawing.Size(367, 26)
+        Me.distrito.TabIndex = 16
+        '
+        'direccion
+        '
+        Me.direccion.Location = New System.Drawing.Point(201, 186)
+        Me.direccion.Name = "direccion"
+        Me.direccion.Size = New System.Drawing.Size(546, 26)
+        Me.direccion.TabIndex = 15
+        '
+        'apellido_materno
+        '
+        Me.apellido_materno.Location = New System.Drawing.Point(201, 97)
+        Me.apellido_materno.Name = "apellido_materno"
+        Me.apellido_materno.Size = New System.Drawing.Size(367, 26)
+        Me.apellido_materno.TabIndex = 14
+        '
+        'apellido_paterno
+        '
+        Me.apellido_paterno.Location = New System.Drawing.Point(201, 57)
+        Me.apellido_paterno.Name = "apellido_paterno"
+        Me.apellido_paterno.Size = New System.Drawing.Size(367, 26)
+        Me.apellido_paterno.TabIndex = 13
+        '
+        'nombres
+        '
+        Me.nombres.Location = New System.Drawing.Point(201, 21)
+        Me.nombres.Name = "nombres"
+        Me.nombres.Size = New System.Drawing.Size(262, 26)
+        Me.nombres.TabIndex = 12
+        '
+        'cbx_estado_civil
+        '
+        Me.cbx_estado_civil.FormattingEnabled = True
+        Me.cbx_estado_civil.Items.AddRange(New Object() {"Soltero/a", "Casado/a", "Viudo/a", "Divorciado/a", "Separado/a"})
+        Me.cbx_estado_civil.Location = New System.Drawing.Point(587, 18)
+        Me.cbx_estado_civil.Name = "cbx_estado_civil"
+        Me.cbx_estado_civil.Size = New System.Drawing.Size(160, 28)
+        Me.cbx_estado_civil.TabIndex = 11
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Location = New System.Drawing.Point(489, 21)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(92, 20)
+        Me.Label11.TabIndex = 10
+        Me.Label11.Text = "Estado civil:"
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Location = New System.Drawing.Point(28, 397)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(41, 20)
+        Me.Label10.TabIndex = 9
+        Me.Label10.Text = "DNI:"
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Location = New System.Drawing.Point(28, 357)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(142, 20)
+        Me.Label9.TabIndex = 8
+        Me.Label9.Text = "Correo electronico:"
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Location = New System.Drawing.Point(28, 317)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(62, 20)
+        Me.Label8.TabIndex = 7
+        Me.Label8.Text = "Celular:"
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Location = New System.Drawing.Point(28, 276)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(75, 20)
+        Me.Label7.TabIndex = 6
+        Me.Label7.Text = "Teléfono:"
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(28, 234)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(63, 20)
+        Me.Label6.TabIndex = 5
+        Me.Label6.Text = "Distrito:"
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(28, 192)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(79, 20)
+        Me.Label5.TabIndex = 4
+        Me.Label5.Text = "Dirección:"
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(28, 60)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(192, 30)
+        Me.Label4.TabIndex = 3
+        Me.Label4.Text = "Apellido paterno:"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(28, 103)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(198, 30)
+        Me.Label3.TabIndex = 2
+        Me.Label3.Text = "Apellido materno:"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(28, 21)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(77, 20)
+        Me.Label2.TabIndex = 1
+        Me.Label2.Text = "Nombres:"
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(28, 149)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(157, 20)
+        Me.Label1.TabIndex = 0
+        Me.Label1.Text = "Fecha de nacimiento"
+        '
         'TabPage2
         '
-        Me.TabPage2.Controls.Add(Me.TextBox16)
-        Me.TabPage2.Controls.Add(Me.TextBox15)
-        Me.TabPage2.Controls.Add(Me.TextBox14)
-        Me.TabPage2.Controls.Add(Me.TextBox13)
-        Me.TabPage2.Controls.Add(Me.TextBox12)
-        Me.TabPage2.Controls.Add(Me.TextBox11)
-        Me.TabPage2.Controls.Add(Me.TextBox10)
+        Me.TabPage2.Controls.Add(Me.cargo_laboral)
+        Me.TabPage2.Controls.Add(Me.telefono_laboral)
+        Me.TabPage2.Controls.Add(Me.distrito_laboral)
+        Me.TabPage2.Controls.Add(Me.direccion_laboral)
+        Me.TabPage2.Controls.Add(Me.centro_laboral)
+        Me.TabPage2.Controls.Add(Me.profesion)
+        Me.TabPage2.Controls.Add(Me.conyuge)
         Me.TabPage2.Controls.Add(Me.Label18)
         Me.TabPage2.Controls.Add(Me.Label17)
         Me.TabPage2.Controls.Add(Me.Label16)
@@ -186,252 +364,54 @@ Partial Class vista_mod_hmo_registrar_hermano
         Me.TabPage2.Text = "Adicionales"
         Me.TabPage2.UseVisualStyleBackColor = True
         '
-        'Label1
+        'cargo_laboral
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(28, 149)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(157, 20)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Fecha de nacimiento"
+        Me.cargo_laboral.Location = New System.Drawing.Point(214, 287)
+        Me.cargo_laboral.Name = "cargo_laboral"
+        Me.cargo_laboral.Size = New System.Drawing.Size(513, 26)
+        Me.cargo_laboral.TabIndex = 20
         '
-        'Label2
+        'telefono_laboral
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(28, 21)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(77, 20)
-        Me.Label2.TabIndex = 1
-        Me.Label2.Text = "Nombres:"
+        Me.telefono_laboral.Location = New System.Drawing.Point(214, 243)
+        Me.telefono_laboral.Name = "telefono_laboral"
+        Me.telefono_laboral.Size = New System.Drawing.Size(513, 26)
+        Me.telefono_laboral.TabIndex = 19
         '
-        'Label3
+        'distrito_laboral
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(28, 103)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(128, 20)
-        Me.Label3.TabIndex = 2
-        Me.Label3.Text = "Apellido paterno:"
+        Me.distrito_laboral.Location = New System.Drawing.Point(214, 202)
+        Me.distrito_laboral.Name = "distrito_laboral"
+        Me.distrito_laboral.Size = New System.Drawing.Size(513, 26)
+        Me.distrito_laboral.TabIndex = 18
         '
-        'Label4
+        'direccion_laboral
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(28, 60)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(132, 20)
-        Me.Label4.TabIndex = 3
-        Me.Label4.Text = "Apellido materno:"
+        Me.direccion_laboral.Location = New System.Drawing.Point(214, 156)
+        Me.direccion_laboral.Name = "direccion_laboral"
+        Me.direccion_laboral.Size = New System.Drawing.Size(513, 26)
+        Me.direccion_laboral.TabIndex = 17
         '
-        'Label5
+        'centro_laboral
         '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(28, 192)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(79, 20)
-        Me.Label5.TabIndex = 4
-        Me.Label5.Text = "Dirección:"
+        Me.centro_laboral.Location = New System.Drawing.Point(214, 111)
+        Me.centro_laboral.Name = "centro_laboral"
+        Me.centro_laboral.Size = New System.Drawing.Size(513, 26)
+        Me.centro_laboral.TabIndex = 16
         '
-        'Label6
+        'profesion
         '
-        Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(28, 234)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(63, 20)
-        Me.Label6.TabIndex = 5
-        Me.Label6.Text = "Distrito:"
+        Me.profesion.Location = New System.Drawing.Point(214, 66)
+        Me.profesion.Name = "profesion"
+        Me.profesion.Size = New System.Drawing.Size(513, 26)
+        Me.profesion.TabIndex = 15
         '
-        'Label7
+        'conyuge
         '
-        Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(28, 276)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(75, 20)
-        Me.Label7.TabIndex = 6
-        Me.Label7.Text = "Teléfono:"
-        '
-        'Label8
-        '
-        Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(28, 317)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(62, 20)
-        Me.Label8.TabIndex = 7
-        Me.Label8.Text = "Celular:"
-        '
-        'Label9
-        '
-        Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(28, 357)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(142, 20)
-        Me.Label9.TabIndex = 8
-        Me.Label9.Text = "Correo electronico:"
-        '
-        'Label10
-        '
-        Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(28, 397)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(41, 20)
-        Me.Label10.TabIndex = 9
-        Me.Label10.Text = "DNI:"
-        '
-        'Label11
-        '
-        Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(489, 21)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(92, 20)
-        Me.Label11.TabIndex = 10
-        Me.Label11.Text = "Estado civil:"
-        '
-        'ComboBox1
-        '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"Soltero/a", "Casado/a", "Viudo/a", "Divorciado/a", "Separado/a"})
-        Me.ComboBox1.Location = New System.Drawing.Point(587, 18)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(160, 28)
-        Me.ComboBox1.TabIndex = 11
-        '
-        'TextBox1
-        '
-        Me.TextBox1.Location = New System.Drawing.Point(201, 21)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(262, 26)
-        Me.TextBox1.TabIndex = 12
-        '
-        'TextBox2
-        '
-        Me.TextBox2.Location = New System.Drawing.Point(201, 57)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(319, 26)
-        Me.TextBox2.TabIndex = 13
-        '
-        'TextBox3
-        '
-        Me.TextBox3.Location = New System.Drawing.Point(201, 97)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(319, 26)
-        Me.TextBox3.TabIndex = 14
-        '
-        'TextBox4
-        '
-        Me.TextBox4.Location = New System.Drawing.Point(201, 186)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(319, 26)
-        Me.TextBox4.TabIndex = 15
-        '
-        'TextBox5
-        '
-        Me.TextBox5.Location = New System.Drawing.Point(201, 228)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(319, 26)
-        Me.TextBox5.TabIndex = 16
-        '
-        'TextBox6
-        '
-        Me.TextBox6.Location = New System.Drawing.Point(201, 270)
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(319, 26)
-        Me.TextBox6.TabIndex = 17
-        '
-        'TextBox7
-        '
-        Me.TextBox7.Location = New System.Drawing.Point(201, 311)
-        Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.Size = New System.Drawing.Size(319, 26)
-        Me.TextBox7.TabIndex = 18
-        '
-        'TextBox8
-        '
-        Me.TextBox8.Location = New System.Drawing.Point(201, 351)
-        Me.TextBox8.Name = "TextBox8"
-        Me.TextBox8.Size = New System.Drawing.Size(319, 26)
-        Me.TextBox8.TabIndex = 19
-        '
-        'TextBox9
-        '
-        Me.TextBox9.Location = New System.Drawing.Point(201, 391)
-        Me.TextBox9.Name = "TextBox9"
-        Me.TextBox9.Size = New System.Drawing.Size(319, 26)
-        Me.TextBox9.TabIndex = 20
-        '
-        'DateTimePicker1
-        '
-        Me.DateTimePicker1.Location = New System.Drawing.Point(201, 142)
-        Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(319, 26)
-        Me.DateTimePicker1.TabIndex = 21
-        '
-        'TabPage3
-        '
-        Me.TabPage3.Controls.Add(Me.TextBox17)
-        Me.TabPage3.Controls.Add(Me.NumericUpDown2)
-        Me.TabPage3.Controls.Add(Me.NumericUpDown1)
-        Me.TabPage3.Controls.Add(Me.Label21)
-        Me.TabPage3.Controls.Add(Me.Label20)
-        Me.TabPage3.Controls.Add(Me.Label19)
-        Me.TabPage3.Location = New System.Drawing.Point(4, 29)
-        Me.TabPage3.Name = "TabPage3"
-        Me.TabPage3.Size = New System.Drawing.Size(766, 452)
-        Me.TabPage3.TabIndex = 2
-        Me.TabPage3.Text = "Hermandad"
-        Me.TabPage3.UseVisualStyleBackColor = True
-        '
-        'Label12
-        '
-        Me.Label12.AutoSize = True
-        Me.Label12.Location = New System.Drawing.Point(19, 28)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(76, 20)
-        Me.Label12.TabIndex = 4
-        Me.Label12.Text = "Conyuge:"
-        '
-        'Label13
-        '
-        Me.Label13.AutoSize = True
-        Me.Label13.Location = New System.Drawing.Point(19, 72)
-        Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(170, 20)
-        Me.Label13.TabIndex = 5
-        Me.Label13.Text = "Profesión u ocupación:"
-        '
-        'Label14
-        '
-        Me.Label14.AutoSize = True
-        Me.Label14.Location = New System.Drawing.Point(19, 117)
-        Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(112, 20)
-        Me.Label14.TabIndex = 6
-        Me.Label14.Text = "Centro laboral:"
-        '
-        'Label15
-        '
-        Me.Label15.AutoSize = True
-        Me.Label15.Location = New System.Drawing.Point(19, 162)
-        Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(79, 20)
-        Me.Label15.TabIndex = 7
-        Me.Label15.Text = "Dirección:"
-        '
-        'Label16
-        '
-        Me.Label16.AutoSize = True
-        Me.Label16.Location = New System.Drawing.Point(19, 208)
-        Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(63, 20)
-        Me.Label16.TabIndex = 8
-        Me.Label16.Text = "Distrito:"
-        '
-        'Label17
-        '
-        Me.Label17.AutoSize = True
-        Me.Label17.Location = New System.Drawing.Point(19, 249)
-        Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(75, 20)
-        Me.Label17.TabIndex = 9
-        Me.Label17.Text = "Teléfono:"
+        Me.conyuge.Location = New System.Drawing.Point(214, 22)
+        Me.conyuge.Name = "conyuge"
+        Me.conyuge.Size = New System.Drawing.Size(513, 26)
+        Me.conyuge.TabIndex = 14
         '
         'Label18
         '
@@ -442,72 +422,99 @@ Partial Class vista_mod_hmo_registrar_hermano
         Me.Label18.TabIndex = 10
         Me.Label18.Text = "Cargo que ocupa:"
         '
-        'TextBox10
+        'Label17
         '
-        Me.TextBox10.Location = New System.Drawing.Point(214, 22)
-        Me.TextBox10.Name = "TextBox10"
-        Me.TextBox10.Size = New System.Drawing.Size(513, 26)
-        Me.TextBox10.TabIndex = 14
+        Me.Label17.AutoSize = True
+        Me.Label17.Location = New System.Drawing.Point(19, 249)
+        Me.Label17.Name = "Label17"
+        Me.Label17.Size = New System.Drawing.Size(75, 20)
+        Me.Label17.TabIndex = 9
+        Me.Label17.Text = "Teléfono:"
         '
-        'TextBox11
+        'Label16
         '
-        Me.TextBox11.Location = New System.Drawing.Point(214, 66)
-        Me.TextBox11.Name = "TextBox11"
-        Me.TextBox11.Size = New System.Drawing.Size(513, 26)
-        Me.TextBox11.TabIndex = 15
+        Me.Label16.AutoSize = True
+        Me.Label16.Location = New System.Drawing.Point(19, 208)
+        Me.Label16.Name = "Label16"
+        Me.Label16.Size = New System.Drawing.Size(63, 20)
+        Me.Label16.TabIndex = 8
+        Me.Label16.Text = "Distrito:"
         '
-        'TextBox12
+        'Label15
         '
-        Me.TextBox12.Location = New System.Drawing.Point(214, 111)
-        Me.TextBox12.Name = "TextBox12"
-        Me.TextBox12.Size = New System.Drawing.Size(513, 26)
-        Me.TextBox12.TabIndex = 16
+        Me.Label15.AutoSize = True
+        Me.Label15.Location = New System.Drawing.Point(19, 162)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(79, 20)
+        Me.Label15.TabIndex = 7
+        Me.Label15.Text = "Dirección:"
         '
-        'TextBox13
+        'Label14
         '
-        Me.TextBox13.Location = New System.Drawing.Point(214, 156)
-        Me.TextBox13.Name = "TextBox13"
-        Me.TextBox13.Size = New System.Drawing.Size(513, 26)
-        Me.TextBox13.TabIndex = 17
+        Me.Label14.AutoSize = True
+        Me.Label14.Location = New System.Drawing.Point(19, 117)
+        Me.Label14.Name = "Label14"
+        Me.Label14.Size = New System.Drawing.Size(112, 20)
+        Me.Label14.TabIndex = 6
+        Me.Label14.Text = "Centro laboral:"
         '
-        'TextBox14
+        'Label13
         '
-        Me.TextBox14.Location = New System.Drawing.Point(214, 202)
-        Me.TextBox14.Name = "TextBox14"
-        Me.TextBox14.Size = New System.Drawing.Size(513, 26)
-        Me.TextBox14.TabIndex = 18
+        Me.Label13.AutoSize = True
+        Me.Label13.Location = New System.Drawing.Point(19, 72)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(170, 20)
+        Me.Label13.TabIndex = 5
+        Me.Label13.Text = "Profesión u ocupación:"
         '
-        'TextBox15
+        'Label12
         '
-        Me.TextBox15.Location = New System.Drawing.Point(214, 243)
-        Me.TextBox15.Name = "TextBox15"
-        Me.TextBox15.Size = New System.Drawing.Size(513, 26)
-        Me.TextBox15.TabIndex = 19
+        Me.Label12.AutoSize = True
+        Me.Label12.Location = New System.Drawing.Point(19, 28)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(76, 20)
+        Me.Label12.TabIndex = 4
+        Me.Label12.Text = "Conyuge:"
         '
-        'TextBox16
+        'TabPage3
         '
-        Me.TextBox16.Location = New System.Drawing.Point(214, 287)
-        Me.TextBox16.Name = "TextBox16"
-        Me.TextBox16.Size = New System.Drawing.Size(513, 26)
-        Me.TextBox16.TabIndex = 20
+        Me.TabPage3.Controls.Add(Me.codigo_hermandad)
+        Me.TabPage3.Controls.Add(Me.number_cuadrilla)
+        Me.TabPage3.Controls.Add(Me.number_ingreso)
+        Me.TabPage3.Controls.Add(Me.Label21)
+        Me.TabPage3.Controls.Add(Me.Label20)
+        Me.TabPage3.Controls.Add(Me.Label19)
+        Me.TabPage3.Location = New System.Drawing.Point(4, 29)
+        Me.TabPage3.Name = "TabPage3"
+        Me.TabPage3.Size = New System.Drawing.Size(766, 452)
+        Me.TabPage3.TabIndex = 2
+        Me.TabPage3.Text = "Hermandad"
+        Me.TabPage3.UseVisualStyleBackColor = True
         '
-        'Label19
+        'codigo_hermandad
         '
-        Me.Label19.AutoSize = True
-        Me.Label19.Location = New System.Drawing.Point(21, 30)
-        Me.Label19.Name = "Label19"
-        Me.Label19.Size = New System.Drawing.Size(120, 20)
-        Me.Label19.TabIndex = 5
-        Me.Label19.Text = "Año de ingreso:"
+        Me.codigo_hermandad.Location = New System.Drawing.Point(177, 120)
+        Me.codigo_hermandad.Name = "codigo_hermandad"
+        Me.codigo_hermandad.Size = New System.Drawing.Size(195, 26)
+        Me.codigo_hermandad.TabIndex = 10
         '
-        'Label20
+        'number_cuadrilla
         '
-        Me.Label20.AutoSize = True
-        Me.Label20.Location = New System.Drawing.Point(21, 76)
-        Me.Label20.Name = "Label20"
-        Me.Label20.Size = New System.Drawing.Size(74, 20)
-        Me.Label20.TabIndex = 6
-        Me.Label20.Text = "Cuadrilla:"
+        Me.number_cuadrilla.Location = New System.Drawing.Point(177, 69)
+        Me.number_cuadrilla.Maximum = New Decimal(New Integer() {20, 0, 0, 0})
+        Me.number_cuadrilla.Name = "number_cuadrilla"
+        Me.number_cuadrilla.Size = New System.Drawing.Size(195, 26)
+        Me.number_cuadrilla.TabIndex = 9
+        Me.number_cuadrilla.Value = New Decimal(New Integer() {1, 0, 0, 0})
+        '
+        'number_ingreso
+        '
+        Me.number_ingreso.Location = New System.Drawing.Point(177, 23)
+        Me.number_ingreso.Maximum = New Decimal(New Integer() {2100, 0, 0, 0})
+        Me.number_ingreso.Name = "number_ingreso"
+        Me.number_ingreso.Size = New System.Drawing.Size(195, 26)
+        Me.number_ingreso.TabIndex = 8
+        Me.number_ingreso.Value = New Decimal(New Integer() {1900, 0, 0, 0})
         '
         'Label21
         '
@@ -518,30 +525,23 @@ Partial Class vista_mod_hmo_registrar_hermano
         Me.Label21.TabIndex = 7
         Me.Label21.Text = "Código:"
         '
-        'NumericUpDown1
+        'Label20
         '
-        Me.NumericUpDown1.Location = New System.Drawing.Point(177, 23)
-        Me.NumericUpDown1.Maximum = New Decimal(New Integer() {2100, 0, 0, 0})
-        Me.NumericUpDown1.Name = "NumericUpDown1"
-        Me.NumericUpDown1.Size = New System.Drawing.Size(195, 26)
-        Me.NumericUpDown1.TabIndex = 8
-        Me.NumericUpDown1.Value = New Decimal(New Integer() {1900, 0, 0, 0})
+        Me.Label20.AutoSize = True
+        Me.Label20.Location = New System.Drawing.Point(21, 76)
+        Me.Label20.Name = "Label20"
+        Me.Label20.Size = New System.Drawing.Size(74, 20)
+        Me.Label20.TabIndex = 6
+        Me.Label20.Text = "Cuadrilla:"
         '
-        'NumericUpDown2
+        'Label19
         '
-        Me.NumericUpDown2.Location = New System.Drawing.Point(177, 69)
-        Me.NumericUpDown2.Maximum = New Decimal(New Integer() {20, 0, 0, 0})
-        Me.NumericUpDown2.Name = "NumericUpDown2"
-        Me.NumericUpDown2.Size = New System.Drawing.Size(195, 26)
-        Me.NumericUpDown2.TabIndex = 9
-        Me.NumericUpDown2.Value = New Decimal(New Integer() {1, 0, 0, 0})
-        '
-        'TextBox17
-        '
-        Me.TextBox17.Location = New System.Drawing.Point(177, 120)
-        Me.TextBox17.Name = "TextBox17"
-        Me.TextBox17.Size = New System.Drawing.Size(100, 26)
-        Me.TextBox17.TabIndex = 10
+        Me.Label19.AutoSize = True
+        Me.Label19.Location = New System.Drawing.Point(21, 30)
+        Me.Label19.Name = "Label19"
+        Me.Label19.Size = New System.Drawing.Size(120, 20)
+        Me.Label19.TabIndex = 5
+        Me.Label19.Text = "Año de ingreso:"
         '
         'vista_mod_hmo_registrar_hermano
         '
@@ -561,8 +561,8 @@ Partial Class vista_mod_hmo_registrar_hermano
         Me.TabPage2.PerformLayout()
         Me.TabPage3.ResumeLayout(False)
         Me.TabPage3.PerformLayout()
-        CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDown2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.number_cuadrilla, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.number_ingreso, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -579,16 +579,16 @@ Partial Class vista_mod_hmo_registrar_hermano
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
     Friend WithEvents TabPage2 As TabPage
-    Friend WithEvents TextBox9 As TextBox
-    Friend WithEvents TextBox8 As TextBox
-    Friend WithEvents TextBox7 As TextBox
-    Friend WithEvents TextBox6 As TextBox
-    Friend WithEvents TextBox5 As TextBox
-    Friend WithEvents TextBox4 As TextBox
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents dni As TextBox
+    Friend WithEvents correo_electronico As TextBox
+    Friend WithEvents celular As TextBox
+    Friend WithEvents telefono As TextBox
+    Friend WithEvents distrito As TextBox
+    Friend WithEvents direccion As TextBox
+    Friend WithEvents apellido_materno As TextBox
+    Friend WithEvents apellido_paterno As TextBox
+    Friend WithEvents nombres As TextBox
+    Friend WithEvents cbx_estado_civil As ComboBox
     Friend WithEvents Label11 As Label
     Friend WithEvents Label10 As Label
     Friend WithEvents Label9 As Label
@@ -596,15 +596,15 @@ Partial Class vista_mod_hmo_registrar_hermano
     Friend WithEvents Label7 As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents Label5 As Label
-    Friend WithEvents DateTimePicker1 As DateTimePicker
+    Friend WithEvents dt_fecha_nacimiento As DateTimePicker
     Friend WithEvents TabPage3 As TabPage
-    Friend WithEvents TextBox16 As TextBox
-    Friend WithEvents TextBox15 As TextBox
-    Friend WithEvents TextBox14 As TextBox
-    Friend WithEvents TextBox13 As TextBox
-    Friend WithEvents TextBox12 As TextBox
-    Friend WithEvents TextBox11 As TextBox
-    Friend WithEvents TextBox10 As TextBox
+    Friend WithEvents cargo_laboral As TextBox
+    Friend WithEvents telefono_laboral As TextBox
+    Friend WithEvents distrito_laboral As TextBox
+    Friend WithEvents direccion_laboral As TextBox
+    Friend WithEvents centro_laboral As TextBox
+    Friend WithEvents profesion As TextBox
+    Friend WithEvents conyuge As TextBox
     Friend WithEvents Label18 As Label
     Friend WithEvents Label17 As Label
     Friend WithEvents Label16 As Label
@@ -614,8 +614,8 @@ Partial Class vista_mod_hmo_registrar_hermano
     Friend WithEvents Label12 As Label
     Friend WithEvents Label20 As Label
     Friend WithEvents Label19 As Label
-    Friend WithEvents TextBox17 As TextBox
-    Friend WithEvents NumericUpDown2 As NumericUpDown
-    Friend WithEvents NumericUpDown1 As NumericUpDown
+    Friend WithEvents codigo_hermandad As TextBox
+    Friend WithEvents number_cuadrilla As NumericUpDown
+    Friend WithEvents number_ingreso As NumericUpDown
     Friend WithEvents Label21 As Label
 End Class

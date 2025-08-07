@@ -5,12 +5,69 @@ Public Class control_hermanos
 
     Public Function ListarTodos() As DataTable
         Using conn As New SqlConnection(Conexion.conexionString)
-            Dim query As String = "SELECT * FROM Hermanos"
+            Dim query As String = "SELECT * FROM VISTA_RESUMEN_HERMANOS"
             Dim da As New SqlDataAdapter(query, conn)
             Dim dt As New DataTable()
             da.Fill(dt)
             Return dt
         End Using
+    End Function
+
+    Public Function ListarTodos_asistencia() As DataTable
+        Using conn As New SqlConnection(Conexion.conexionString)
+            Dim query As String = "SELECT id_hermano as id,apellido_paterno,apellido_materno,nombres FROM hermanos order by apellido_paterno"
+            Dim da As New SqlDataAdapter(query, conn)
+            Dim dt As New DataTable()
+            da.Fill(dt)
+            Return dt
+        End Using
+    End Function
+
+    Public Function BuscarPorId(id As Integer) As model_hermanos
+        Dim hermanoEncontrado As model_hermanos = Nothing
+
+        Using conn As New SqlConnection(conexionString)
+            Dim query As String = "SELECT * FROM Hermanos WHERE id_hermano = @Id"
+            Dim cmd As New SqlCommand(query, conn)
+            cmd.Parameters.AddWithValue("@Id", id)
+
+            Try
+                conn.Open()
+                Dim reader As SqlDataReader = cmd.ExecuteReader()
+
+                If reader.Read() Then
+                    hermanoEncontrado = New model_hermanos() With {
+                        .IdHermano = Convert.ToInt32(reader("id_hermano")),
+                        .AnioIngreso = Convert.ToInt32(reader("anio_ingreso")),
+                        .CuadrillaGrupoRama = reader("cuadrilla_grupo_rama").ToString(),
+                        .CodigoHSMN = reader("codigo_hsmn").ToString(),
+                        .ApellidoPaterno = reader("apellido_paterno").ToString(),
+                        .ApellidoMaterno = reader("apellido_materno").ToString(),
+                        .Nombres = reader("nombres").ToString(),
+                        .FechaNacimiento = Convert.ToDateTime(reader("fecha_nacimiento")),
+                        .Direccion = reader("direccion").ToString(),
+                        .Distrito = reader("distrito").ToString(),
+                        .Telefono = reader("telefono").ToString(),
+                        .Celular = reader("celular").ToString(),
+                        .CorreoElectronico = reader("correo_electronico").ToString(),
+                        .NumeroDNI = reader("numero_dni").ToString(),
+                        .EstadoCivil = reader("estado_civil").ToString(),
+                        .NombreConyuge = reader("nombre_conyuge").ToString(),
+                        .ProfesionOcupacion = reader("profesion_ocupacion").ToString(),
+                        .NombreCentroLaboral = reader("nombre_centro_laboral").ToString(),
+                        .DireccionLaboral = reader("direccion_laboral").ToString(),
+                        .DistritoLaboral = reader("distrito_laboral").ToString(),
+                        .TelefonoLaboral = reader("telefono_laboral").ToString(),
+                        .CargoOcupado = reader("cargo_ocupado").ToString()
+                    }
+                End If
+
+            Catch ex As Exception
+                MessageBox.Show("Error al buscar hermano: " & ex.Message)
+            End Try
+        End Using
+
+        Return hermanoEncontrado
     End Function
 
     Public Function Registrar(h As model_hermanos) As Boolean

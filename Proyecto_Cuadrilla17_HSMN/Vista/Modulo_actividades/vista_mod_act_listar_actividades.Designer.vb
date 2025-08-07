@@ -23,65 +23,64 @@ Partial Class vista_mod_act_listar_actividades
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.dtgactividades = New System.Windows.Forms.DataGridView()
         Me.btnRegistrar = New System.Windows.Forms.Button()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dtgactividades, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(8, 6)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label1.Location = New System.Drawing.Point(12, 9)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(117, 24)
+        Me.Label1.Size = New System.Drawing.Size(172, 32)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Actividades"
         '
-        'DataGridView1
+        'dtgactividades
         '
-        Me.DataGridView1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+        Me.dtgactividades.AllowUserToAddRows = False
+        Me.dtgactividades.AllowUserToDeleteRows = False
+        Me.dtgactividades.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(12, 88)
-        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(2)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.RowHeadersWidth = 62
-        Me.DataGridView1.RowTemplate.Height = 28
-        Me.DataGridView1.Size = New System.Drawing.Size(633, 240)
-        Me.DataGridView1.TabIndex = 1
+        Me.dtgactividades.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dtgactividades.Location = New System.Drawing.Point(18, 135)
+        Me.dtgactividades.Name = "dtgactividades"
+        Me.dtgactividades.ReadOnly = True
+        Me.dtgactividades.RowHeadersWidth = 62
+        Me.dtgactividades.RowTemplate.Height = 28
+        Me.dtgactividades.Size = New System.Drawing.Size(950, 369)
+        Me.dtgactividades.TabIndex = 1
         '
         'btnRegistrar
         '
         Me.btnRegistrar.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btnRegistrar.Location = New System.Drawing.Point(578, 60)
-        Me.btnRegistrar.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnRegistrar.Location = New System.Drawing.Point(867, 92)
         Me.btnRegistrar.Name = "btnRegistrar"
-        Me.btnRegistrar.Size = New System.Drawing.Size(67, 23)
+        Me.btnRegistrar.Size = New System.Drawing.Size(100, 35)
         Me.btnRegistrar.TabIndex = 2
         Me.btnRegistrar.Text = "Registrar"
         Me.btnRegistrar.UseVisualStyleBackColor = True
         '
         'vista_mod_act_listar_actividades
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(659, 335)
+        Me.ClientSize = New System.Drawing.Size(988, 515)
         Me.Controls.Add(Me.btnRegistrar)
-        Me.Controls.Add(Me.DataGridView1)
+        Me.Controls.Add(Me.dtgactividades)
         Me.Controls.Add(Me.Label1)
-        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "vista_mod_act_listar_actividades"
         Me.Text = "Actividades"
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dtgactividades, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
     Friend WithEvents Label1 As Label
-    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents dtgactividades As DataGridView
     Friend WithEvents btnRegistrar As Button
 End Class

@@ -28,13 +28,13 @@ Partial Class vista_mod_asis_registrar_asistencia
         Me.ToolStripSeparator4 = New System.Windows.Forms.ToolStripSeparator()
         Me.ToolStripButton4 = New System.Windows.Forms.ToolStripButton()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        Me.Label3 = New System.Windows.Forms.Label()
+        Me.dtgasistencia = New System.Windows.Forms.DataGridView()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.cbx_actividad = New System.Windows.Forms.ComboBox()
+        Me.Label3 = New System.Windows.Forms.Label()
         Me.ToolStrip1.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dtgasistencia, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'ToolStrip1
@@ -44,7 +44,7 @@ Partial Class vista_mod_asis_registrar_asistencia
         Me.ToolStrip1.Location = New System.Drawing.Point(0, 0)
         Me.ToolStrip1.Name = "ToolStrip1"
         Me.ToolStrip1.Padding = New System.Windows.Forms.Padding(0, 5, 4, 5)
-        Me.ToolStrip1.Size = New System.Drawing.Size(782, 54)
+        Me.ToolStrip1.Size = New System.Drawing.Size(791, 54)
         Me.ToolStrip1.TabIndex = 1
         Me.ToolStrip1.Text = "ToolStrip1"
         '
@@ -76,34 +76,28 @@ Partial Class vista_mod_asis_registrar_asistencia
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.DataGridView1)
+        Me.GroupBox1.Controls.Add(Me.dtgasistencia)
         Me.GroupBox1.Controls.Add(Me.Label1)
-        Me.GroupBox1.Controls.Add(Me.ComboBox1)
+        Me.GroupBox1.Controls.Add(Me.cbx_actividad)
         Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Location = New System.Drawing.Point(12, 90)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(758, 435)
+        Me.GroupBox1.Size = New System.Drawing.Size(758, 681)
         Me.GroupBox1.TabIndex = 2
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Actividad"
         '
-        'ComboBox1
+        'dtgasistencia
         '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"Obligatorio", "Voluntario"})
-        Me.ComboBox1.Location = New System.Drawing.Point(113, 37)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(326, 28)
-        Me.ComboBox1.TabIndex = 5
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(13, 45)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(77, 20)
-        Me.Label3.TabIndex = 4
-        Me.Label3.Text = "Actividad:"
+        Me.dtgasistencia.AllowUserToAddRows = False
+        Me.dtgasistencia.AllowUserToDeleteRows = False
+        Me.dtgasistencia.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dtgasistencia.Location = New System.Drawing.Point(17, 130)
+        Me.dtgasistencia.Name = "dtgasistencia"
+        Me.dtgasistencia.RowHeadersWidth = 62
+        Me.dtgasistencia.RowTemplate.Height = 28
+        Me.dtgasistencia.Size = New System.Drawing.Size(725, 545)
+        Me.dtgasistencia.TabIndex = 7
         '
         'Label1
         '
@@ -114,24 +108,29 @@ Partial Class vista_mod_asis_registrar_asistencia
         Me.Label1.TabIndex = 6
         Me.Label1.Text = "Llenar asistencia:"
         '
-        'DataGridView1
+        'cbx_actividad
         '
-        Me.DataGridView1.AllowUserToAddRows = False
-        Me.DataGridView1.AllowUserToDeleteRows = False
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(17, 130)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.ReadOnly = True
-        Me.DataGridView1.RowHeadersWidth = 62
-        Me.DataGridView1.RowTemplate.Height = 28
-        Me.DataGridView1.Size = New System.Drawing.Size(725, 289)
-        Me.DataGridView1.TabIndex = 7
+        Me.cbx_actividad.FormattingEnabled = True
+        Me.cbx_actividad.Items.AddRange(New Object() {"Obligatorio", "Voluntario"})
+        Me.cbx_actividad.Location = New System.Drawing.Point(113, 37)
+        Me.cbx_actividad.Name = "cbx_actividad"
+        Me.cbx_actividad.Size = New System.Drawing.Size(326, 28)
+        Me.cbx_actividad.TabIndex = 5
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(13, 45)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(77, 20)
+        Me.Label3.TabIndex = 4
+        Me.Label3.Text = "Actividad:"
         '
         'vista_mod_asis_registrar_asistencia
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(782, 537)
+        Me.ClientSize = New System.Drawing.Size(791, 783)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.ToolStrip1)
         Me.Name = "vista_mod_asis_registrar_asistencia"
@@ -140,7 +139,7 @@ Partial Class vista_mod_asis_registrar_asistencia
         Me.ToolStrip1.PerformLayout()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dtgasistencia, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -151,8 +150,8 @@ Partial Class vista_mod_asis_registrar_asistencia
     Friend WithEvents ToolStripSeparator4 As ToolStripSeparator
     Friend WithEvents ToolStripButton4 As ToolStripButton
     Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents dtgasistencia As DataGridView
     Friend WithEvents Label1 As Label
-    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents cbx_actividad As ComboBox
     Friend WithEvents Label3 As Label
 End Class

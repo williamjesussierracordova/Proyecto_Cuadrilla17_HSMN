@@ -23,9 +23,9 @@ Partial Class vista_mod_hmo_listar_hermano
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.btnRegistrar = New System.Windows.Forms.Button()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.dtg_hermanos = New System.Windows.Forms.DataGridView()
         Me.Label1 = New System.Windows.Forms.Label()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dtg_hermanos, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'btnRegistrar
@@ -38,18 +38,21 @@ Partial Class vista_mod_hmo_listar_hermano
         Me.btnRegistrar.Text = "Registrar"
         Me.btnRegistrar.UseVisualStyleBackColor = True
         '
-        'DataGridView1
+        'dtg_hermanos
         '
-        Me.DataGridView1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+        Me.dtg_hermanos.AllowUserToAddRows = False
+        Me.dtg_hermanos.AllowUserToDeleteRows = False
+        Me.dtg_hermanos.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(12, 132)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.RowHeadersWidth = 62
-        Me.DataGridView1.RowTemplate.Height = 28
-        Me.DataGridView1.Size = New System.Drawing.Size(981, 376)
-        Me.DataGridView1.TabIndex = 7
+        Me.dtg_hermanos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dtg_hermanos.Location = New System.Drawing.Point(12, 132)
+        Me.dtg_hermanos.Name = "dtg_hermanos"
+        Me.dtg_hermanos.ReadOnly = True
+        Me.dtg_hermanos.RowHeadersWidth = 62
+        Me.dtg_hermanos.RowTemplate.Height = 28
+        Me.dtg_hermanos.Size = New System.Drawing.Size(981, 376)
+        Me.dtg_hermanos.TabIndex = 7
         '
         'Label1
         '
@@ -67,17 +70,17 @@ Partial Class vista_mod_hmo_listar_hermano
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1005, 520)
         Me.Controls.Add(Me.btnRegistrar)
-        Me.Controls.Add(Me.DataGridView1)
+        Me.Controls.Add(Me.dtg_hermanos)
         Me.Controls.Add(Me.Label1)
         Me.Name = "vista_mod_hmo_listar_hermano"
         Me.Text = "vista_mod_hmo_listar_hermano"
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dtg_hermanos, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
     Friend WithEvents btnRegistrar As Button
-    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents dtg_hermanos As DataGridView
     Friend WithEvents Label1 As Label
 End Class
