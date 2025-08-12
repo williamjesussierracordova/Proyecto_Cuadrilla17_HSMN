@@ -185,6 +185,9 @@
     <EmbeddedResource Include="Vista\Modulo_actividades\vista_mod_act_registrar_actividades.resx">
       <DependentUpon>vista_mod_act_registrar_actividades.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Modulo_asistencia\vista_mod_asis_actualizar_asistencia.resx">
+      <DependentUpon>vista_mod_asis_actualizar_asistencia.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vista\Modulo_asistencia\vista_mod_asis_listar_asistencia.resx">
       <DependentUpon>vista_mod_asis_listar_asistencia.vb</DependentUpon>
     </EmbeddedResource>

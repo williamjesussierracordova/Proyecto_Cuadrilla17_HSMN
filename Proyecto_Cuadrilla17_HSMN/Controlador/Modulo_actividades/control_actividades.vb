@@ -12,6 +12,16 @@ Public Class control_actividades
         End Using
     End Function
 
+    Public Function ListarEventos_Asistencia() As DataTable
+        Dim query As String = "SELECT * FROM Eventos where id_evento not in (select distinct(id_evento) from Asistencias)"
+        Using connection As New SqlConnection(conexionString),
+              adapter As New SqlDataAdapter(query, connection)
+            Dim dt As New DataTable()
+            adapter.Fill(dt)
+            Return dt
+        End Using
+    End Function
+
     Public Function BuscarPorId(id As Integer) As model_actividades
         Dim actividadencontrada As model_actividades = Nothing
 

@@ -6,13 +6,14 @@
         Me.CenterToScreen()
 
         ' cargar las actividades en el combo box
-        Dim actividades As DataTable = control_actividad.ListarEventos()
+        Dim actividades As DataTable = control_actividad.ListarEventos_Asistencia()
         If actividades IsNot Nothing AndAlso actividades.Rows.Count > 0 Then
             cbx_actividad.DataSource = actividades
             cbx_actividad.DisplayMember = "nombre_evento"
             cbx_actividad.ValueMember = "id_evento"
         Else
             MessageBox.Show("No se encontraron actividades disponibles.", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            Me.Close()
         End If
 
         ' en el datagridview se cargaran los hermanos y se podra marcar la asistencia
@@ -66,5 +67,10 @@
                 End If
             End If
         Next
+
+        MessageBox.Show("Asistencia registrada correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information)
+        Me.Close()
     End Sub
+
+
 End Class

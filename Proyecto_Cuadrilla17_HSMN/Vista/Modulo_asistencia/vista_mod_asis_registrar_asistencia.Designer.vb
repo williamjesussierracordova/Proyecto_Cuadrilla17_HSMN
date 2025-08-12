@@ -43,8 +43,8 @@ Partial Class vista_mod_asis_registrar_asistencia
         Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripButton5, Me.ToolStripSeparator4, Me.ToolStripButton4})
         Me.ToolStrip1.Location = New System.Drawing.Point(0, 0)
         Me.ToolStrip1.Name = "ToolStrip1"
-        Me.ToolStrip1.Padding = New System.Windows.Forms.Padding(0, 5, 4, 5)
-        Me.ToolStrip1.Size = New System.Drawing.Size(791, 54)
+        Me.ToolStrip1.Padding = New System.Windows.Forms.Padding(0, 3, 3, 3)
+        Me.ToolStrip1.Size = New System.Drawing.Size(561, 50)
         Me.ToolStrip1.TabIndex = 1
         Me.ToolStrip1.Text = "ToolStrip1"
         '
@@ -57,7 +57,7 @@ Partial Class vista_mod_asis_registrar_asistencia
         Me.ToolStripButton5.Name = "ToolStripButton5"
         Me.ToolStripButton5.Size = New System.Drawing.Size(39, 41)
         Me.ToolStripButton5.Text = "ToolStripButton5"
-        Me.ToolStripButton5.ToolTipText = "Guardar registro"
+        Me.ToolStripButton5.ToolTipText = "Guardar asistencia"
         '
         'ToolStripSeparator4
         '
@@ -80,9 +80,11 @@ Partial Class vista_mod_asis_registrar_asistencia
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Controls.Add(Me.cbx_actividad)
         Me.GroupBox1.Controls.Add(Me.Label3)
-        Me.GroupBox1.Location = New System.Drawing.Point(12, 90)
+        Me.GroupBox1.Location = New System.Drawing.Point(8, 58)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(2)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(758, 681)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(2)
+        Me.GroupBox1.Size = New System.Drawing.Size(542, 443)
         Me.GroupBox1.TabIndex = 2
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Actividad"
@@ -92,47 +94,51 @@ Partial Class vista_mod_asis_registrar_asistencia
         Me.dtgasistencia.AllowUserToAddRows = False
         Me.dtgasistencia.AllowUserToDeleteRows = False
         Me.dtgasistencia.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dtgasistencia.Location = New System.Drawing.Point(17, 130)
+        Me.dtgasistencia.Location = New System.Drawing.Point(11, 84)
+        Me.dtgasistencia.Margin = New System.Windows.Forms.Padding(2)
         Me.dtgasistencia.Name = "dtgasistencia"
         Me.dtgasistencia.RowHeadersWidth = 62
         Me.dtgasistencia.RowTemplate.Height = 28
-        Me.dtgasistencia.Size = New System.Drawing.Size(725, 545)
+        Me.dtgasistencia.Size = New System.Drawing.Size(527, 354)
         Me.dtgasistencia.TabIndex = 7
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(13, 95)
+        Me.Label1.Location = New System.Drawing.Point(9, 62)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(132, 20)
+        Me.Label1.Size = New System.Drawing.Size(89, 13)
         Me.Label1.TabIndex = 6
         Me.Label1.Text = "Llenar asistencia:"
         '
         'cbx_actividad
         '
         Me.cbx_actividad.FormattingEnabled = True
-        Me.cbx_actividad.Items.AddRange(New Object() {"Obligatorio", "Voluntario"})
-        Me.cbx_actividad.Location = New System.Drawing.Point(113, 37)
+        Me.cbx_actividad.Location = New System.Drawing.Point(75, 24)
+        Me.cbx_actividad.Margin = New System.Windows.Forms.Padding(2)
         Me.cbx_actividad.Name = "cbx_actividad"
-        Me.cbx_actividad.Size = New System.Drawing.Size(326, 28)
+        Me.cbx_actividad.Size = New System.Drawing.Size(219, 21)
         Me.cbx_actividad.TabIndex = 5
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(13, 45)
+        Me.Label3.Location = New System.Drawing.Point(9, 29)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(77, 20)
+        Me.Label3.Size = New System.Drawing.Size(54, 13)
         Me.Label3.TabIndex = 4
         Me.Label3.Text = "Actividad:"
         '
         'vista_mod_asis_registrar_asistencia
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(791, 783)
+        Me.ClientSize = New System.Drawing.Size(561, 509)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.ToolStrip1)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "vista_mod_asis_registrar_asistencia"
         Me.Text = "vista_mod_asis_registrar_asistencia"
         Me.ToolStrip1.ResumeLayout(False)
