@@ -21,4 +21,5 @@
     Public Property DistritoLaboral As String
     Public Property TelefonoLaboral As String
     Public Property CargoOcupado As String
+    Public Property Estado As String
 End Class

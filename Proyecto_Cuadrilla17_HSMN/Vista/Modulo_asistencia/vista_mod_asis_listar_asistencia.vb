@@ -12,6 +12,9 @@
     Private Sub btnRegistrar_Click(sender As Object, e As EventArgs) Handles btnRegistrar.Click
         Dim frm As New vista_mod_asis_registrar_asistencia
         frm.ShowDialog()
+
+        data_table_asistencia = control_asistencia.ListarAsistencias()
+        dtgasistencia.DataSource = data_table_asistencia
     End Sub
 
     Private Sub dtgasistencia_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles dtgasistencia.CellDoubleClick

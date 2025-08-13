@@ -31,7 +31,8 @@
             .CargoOcupado = cargo_laboral.Text,
             .AnioIngreso = Convert.ToInt32(number_ingreso.Value),
             .CuadrillaGrupoRama = number_cuadrilla.Value.ToString(),
-            .CodigoHSMN = codigo_hermandad.Text
+            .CodigoHSMN = codigo_hermandad.Text,
+            .Estado = If(cbxestado.SelectedItem IsNot Nothing, cbxestado.SelectedItem.ToString(), String.Empty)
         }
         Dim success As Boolean = controlador_hermanos.Registrar(hermano)
         If success Then

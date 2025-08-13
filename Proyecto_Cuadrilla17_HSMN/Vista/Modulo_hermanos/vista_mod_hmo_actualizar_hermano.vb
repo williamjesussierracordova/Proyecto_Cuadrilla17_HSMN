@@ -29,6 +29,7 @@
             number_anio_ingreso.Value = hermano.AnioIngreso
             cuadrilla.Value = If(String.IsNullOrEmpty(hermano.CuadrillaGrupoRama), 0, Convert.ToInt32(hermano.CuadrillaGrupoRama))
             codigo_hermandad.Text = hermano.CodigoHSMN
+            cbxestado.SelectedItem = hermano.Estado
         End If
     End Sub
 
@@ -76,7 +77,8 @@
             .CargoOcupado = cargo.Text,
             .AnioIngreso = Convert.ToInt32(number_anio_ingreso.Value),
             .CuadrillaGrupoRama = cuadrilla.Value.ToString(),
-            .CodigoHSMN = codigo_hermandad.Text
+            .CodigoHSMN = codigo_hermandad.Text,
+            .Estado = If(cbxestado.SelectedItem IsNot Nothing, cbxestado.SelectedItem.ToString(), String.Empty)
         }
         Dim success As Boolean = controlador_hermanos.Actualizar(hermano)
         If success Then

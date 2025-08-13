@@ -5,7 +5,7 @@ Public Class control_hermanos
 
     Public Function ListarTodos() As DataTable
         Using conn As New SqlConnection(Conexion.conexionString)
-            Dim query As String = "SELECT * FROM VISTA_RESUMEN_HERMANOS"
+            Dim query As String = "SELECT * FROM VISTA_RESUMEN_HERMANOS order by apellido_paterno,apellido_materno,nombres desc"
             Dim da As New SqlDataAdapter(query, conn)
             Dim dt As New DataTable()
             da.Fill(dt)
@@ -15,7 +15,7 @@ Public Class control_hermanos
 
     Public Function ListarTodos_asistencia() As DataTable
         Using conn As New SqlConnection(Conexion.conexionString)
-            Dim query As String = "SELECT id_hermano as id,apellido_paterno,apellido_materno,nombres FROM hermanos order by apellido_paterno"
+            Dim query As String = "SELECT id_hermano as id,apellido_paterno,apellido_materno,nombres FROM hermanos where estado = 'ACTIVO' order by apellido_paterno,apellido_materno,nombres desc "
             Dim da As New SqlDataAdapter(query, conn)
             Dim dt As New DataTable()
             da.Fill(dt)
@@ -58,7 +58,8 @@ Public Class control_hermanos
                         .DireccionLaboral = reader("direccion_laboral").ToString(),
                         .DistritoLaboral = reader("distrito_laboral").ToString(),
                         .TelefonoLaboral = reader("telefono_laboral").ToString(),
-                        .CargoOcupado = reader("cargo_ocupado").ToString()
+                        .CargoOcupado = reader("cargo_ocupado").ToString(),
+                        .Estado = reader("estado").ToString()
                     }
                 End If
 
@@ -72,8 +73,8 @@ Public Class control_hermanos
 
     Public Function Registrar(h As model_hermanos) As Boolean
         Using conn As New SqlConnection(Conexion.conexionString)
-            Dim query As String = "INSERT INTO Hermanos (anio_ingreso, cuadrilla_grupo_rama, codigo_hsmn, apellido_paterno, apellido_materno, nombres, fecha_nacimiento, direccion, distrito, telefono, celular, correo_electronico, numero_dni, estado_civil, nombre_conyuge, profesion_ocupacion, nombre_centro_laboral, direccion_laboral, distrito_laboral, telefono_laboral, cargo_ocupado) 
-                                   VALUES (@anio, @grupo, @codigo, @paterno, @materno, @nombres, @fecha_nac, @direccion, @distrito, @telefono, @celular, @correo, @dni, @civil, @conyuge, @profesion, @centro, @dir_lab, @dist_lab, @tel_lab, @cargo)"
+            Dim query As String = "INSERT INTO Hermanos (anio_ingreso, cuadrilla_grupo_rama, codigo_hsmn, apellido_paterno, apellido_materno, nombres, fecha_nacimiento, direccion, distrito, telefono, celular, correo_electronico, numero_dni, estado_civil, nombre_conyuge, profesion_ocupacion, nombre_centro_laboral, direccion_laboral, distrito_laboral, telefono_laboral, cargo_ocupado,estado) 
+                                   VALUES (@anio, @grupo, @codigo, @paterno, @materno, @nombres, @fecha_nac, @direccion, @distrito, @telefono, @celular, @correo, @dni, @civil, @conyuge, @profesion, @centro, @dir_lab, @dist_lab, @tel_lab, @cargo,@estado)"
             Using cmd As New SqlCommand(query, conn)
                 With cmd.Parameters
                     .AddWithValue("@anio", h.AnioIngreso)
@@ -97,6 +98,7 @@ Public Class control_hermanos
                     .AddWithValue("@dist_lab", h.DistritoLaboral)
                     .AddWithValue("@tel_lab", h.TelefonoLaboral)
                     .AddWithValue("@cargo", h.CargoOcupado)
+                    .AddWithValue("@estado", h.Estado)
                 End With
                 conn.Open()
                 Return cmd.ExecuteNonQuery() > 0
@@ -106,7 +108,7 @@ Public Class control_hermanos
 
     Public Function Actualizar(h As model_hermanos) As Boolean
         Using conn As New SqlConnection(Conexion.conexionString)
-            Dim query As String = "UPDATE Hermanos SET anio_ingreso=@anio, cuadrilla_grupo_rama=@grupo, codigo_hsmn=@codigo, apellido_paterno=@paterno, apellido_materno=@materno, nombres=@nombres, fecha_nacimiento=@fecha_nac, direccion=@direccion, distrito=@distrito, telefono=@telefono, celular=@celular, correo_electronico=@correo, numero_dni=@dni, estado_civil=@civil, nombre_conyuge=@conyuge, profesion_ocupacion=@profesion, nombre_centro_laboral=@centro, direccion_laboral=@dir_lab, distrito_laboral=@dist_lab, telefono_laboral=@tel_lab, cargo_ocupado=@cargo WHERE id_hermano=@id"
+            Dim query As String = "UPDATE Hermanos SET anio_ingreso=@anio, cuadrilla_grupo_rama=@grupo, codigo_hsmn=@codigo, apellido_paterno=@paterno, apellido_materno=@materno, nombres=@nombres, fecha_nacimiento=@fecha_nac, direccion=@direccion, distrito=@distrito, telefono=@telefono, celular=@celular, correo_electronico=@correo, numero_dni=@dni, estado_civil=@civil, nombre_conyuge=@conyuge, profesion_ocupacion=@profesion, nombre_centro_laboral=@centro, direccion_laboral=@dir_lab, distrito_laboral=@dist_lab, telefono_laboral=@tel_lab, cargo_ocupado=@cargo, estado=@estado WHERE id_hermano=@id"
             Using cmd As New SqlCommand(query, conn)
                 With cmd.Parameters
                     .AddWithValue("@id", h.IdHermano)
@@ -131,6 +133,7 @@ Public Class control_hermanos
                     .AddWithValue("@dist_lab", h.DistritoLaboral)
                     .AddWithValue("@tel_lab", h.TelefonoLaboral)
                     .AddWithValue("@cargo", h.CargoOcupado)
+                    .AddWithValue("@estado", h.Estado)
                 End With
                 conn.Open()
                 Return cmd.ExecuteNonQuery() > 0
